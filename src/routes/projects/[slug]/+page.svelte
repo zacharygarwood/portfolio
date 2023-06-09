@@ -2,8 +2,10 @@
     export let data;
 </script>
 
-<article>
+<div>
     <h1>{data.title}</h1>
-    <h2>{data.tags}</h2>
+    <p>{data.date}</p>
+    <p>Tags: {data.tags}</p>
     <svelte:component this={data.content} />
-</article>
+</div>
+

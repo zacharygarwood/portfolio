@@ -5,16 +5,12 @@
 </script>
 
 <div>
-    <h1><a href={path}>{title}</a></h1>
+    <h1><a href={path} class="title">{title}</a></h1>
     <p>{description}</p>
 </div>
 
 <style>
-    a {
+    .title {
         color: inherit;
-    }
-    .tags {
-        font-size: .75rem;
-        font-weight: normal;
     }
 </style>
