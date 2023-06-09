@@ -16,5 +16,8 @@
 		"svelte-preprocess": "^5.0.4",
 		"vite": "^4.3.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"svelte-routing": "^1.10.0"
+	}
 }
