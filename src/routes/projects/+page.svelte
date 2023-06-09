@@ -4,5 +4,5 @@
 </script>
     
 {#each data.projects as project}
-    <Project title={project.meta.title} tags={project.meta.tags} description={project.meta.description} />
+    <Project path={project.path} title={project.meta.title} description={project.meta.description} />
 {/each}
