@@ -17,7 +17,7 @@
     <h1>Howdy!</h1>
     {#if showGif}
       <img
-        src="/assets/easter-egg.gif"
+        src="/assets/home-page/easter-egg.gif"
         alt="GIF"
         class="emoji-image"
         on:click={rickRoll}
@@ -25,7 +25,7 @@
       <div class="easter-egg">{easterEggMessage}</div>
     {:else}
       <img
-        src="/assets/cowboy.png"
+        src="/assets/home-page/cowboy.png"
         alt="Cowboy"
         class="emoji-image"
         on:click={toggleGif}
@@ -35,7 +35,7 @@
 
   <div>
     <p>
-      <img src="/assets/me.jpg" alt="Me" class="profile-image" />
+      <img src="/assets/home-page/me.jpg" alt="Me" class="profile-image" />
     </p>
     <p>
       I'm Zach Garwood, nice to meet you! Somehow you have stumbled upon my

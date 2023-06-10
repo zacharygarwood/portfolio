@@ -5,7 +5,7 @@ date: "2023-06-06"
 description: "UCI compatible chess engine written in Rust. In the beginning it had a fitting name (it wasn't good), but now can consistently beat it's creator. You can challenge it on lichess @FlounderBot."
 ---
 
-<img alt="Flounder's Best Game" src="/assets/flounders-best-game.gif" width="100%" height="100%" style="margin-right: 20px"/>
+<img alt="Flounder's Best Game" src="/assets/flounder/flounders-best-game.gif" width="100%" height="100%" style="margin-right: 20px"/>
 
 Note: My favorite game. Playing as the black pieces.
 
@@ -28,24 +28,76 @@ Evaluating positions is done quickly with the use of <a href="https://www.chessp
 
 Chess has a very high branching factor making it is crucial to test your code. Below is a table showing the number of possible positions after a given amount of moves from the starting position. As there are so many different possibilities, one small mistake could have huge consequences. Flounder implements <a href="https://www.chessprogramming.org/Perft" class="link" target="_blank">perft</a> short for "performance test" to verify that the move generation is working as intended.
 
-| Depth	| Nodes	                            |
-|-------|----------------------------------:|
-| 0	    | 1                                 |
-| 1	    | 20                                |
-| 2	    | 400                               |
-| 3	    | 8,902                             |
-| 4	    | 197,281                           |
-| 5	    | 4,865,609                         |
-| 6	    | 119,060,324                       |
-| 7	    | 3,195,901,860                     |
-| 8	    | 84,998,978,956                    |
-| 9	    | 2,439,530,234,167                 |
-| 10	| 69,352,859,712,417                |
-| 11	| 2,097,651,003,696,806             |
-| 12	| 62,854,969,236,701,747            |
-| 13	| 1,981,066,775,000,396,239         |
-| 14	| 61,885,021,521,585,529,237        |
-| 15	| 2,015,099,950,053,364,471,960     |
+<table class="table">
+  <tr>
+    <th>Depth</th>
+    <th>Nodes</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>400</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>8,902</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>197,281</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>4,865,609</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>119,060,324</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>3,195,901,860</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>84,998,978,956</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>2,439,530,234,167</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>69,352,859,712,417</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>2,097,651,003,696,806</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>62,854,969,236,701,747</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>1,981,066,775,000,396,239</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>61,885,021,521,585,529,237</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>2,015,099,950,053,364,471,960</td>
+  </tr>
+</table>
 
 Source: <a href="https://www.chessprogramming.org/Perft_Results" class="link" target="_blank">Perft Results</a>
 
@@ -65,7 +117,18 @@ Lastly, Flounder searches at a fixed depth as of right now. This isn't a big iss
         color: #0000FF;
         text-decoration: none;
     }
+
     .link:hover {
         text-decoration: underline;
+    }
+
+    .table {
+        border-collapse: collapse;
+    }
+
+    .table th,
+    .table td {
+        border: 1px solid black;
+        padding: 8px;
     }
 </style>
