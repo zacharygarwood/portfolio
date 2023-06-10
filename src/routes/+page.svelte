@@ -1,8 +1,10 @@
 <script>
   let showGif = false;
+  let easterEggMessage = "Click me!"
 
   function rickRoll() {
     window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    easterEggMessage = "sorry, lol"
   }
 
   function toggleGif() {
@@ -20,7 +22,7 @@
         class="emoji-image"
         on:click={rickRoll}
       />
-      <div class="easter-egg">Click me!</div>
+      <div class="easter-egg">{easterEggMessage}</div>
     {:else}
       <img
         src="/assets/cowboy.png"
@@ -41,7 +43,6 @@
     </p>
 
     <p>If you are in a rush, here's a little about me:</p>
-
     <ul>
       <li>Software engineer looking for new an exciting opportunities</li>
       <li>Interned at Amazon and Principal Financial Group</li>
@@ -50,6 +51,10 @@
     </ul>
 
     <p>If you think I'm a good fit for your company feel free to reach out!</p>
+    <ul>
+      <li><a href="https://github.com/zacharygarwood" class="link" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/zachary-garwood/" class="link" target="_blank">Linkedin</a></li>
+    </ul>
   </div>
 </div>
 
@@ -76,5 +81,13 @@
   .easter-egg {
     font-size: 1rem;
     font-weight: normal;
+  }
+
+  .link {
+    color: #0000FF;
+    text-decoration: none;
+  }
+  .link:hover {
+    text-decoration: underline;
   }
 </style>

@@ -7,7 +7,7 @@ description: "Social habit tracker that keeps you accountable. Allows you to bui
 
 
 ### Introduction
-Waddle is currently in development which is why this page is well... bland. The purpose of the app is to help people build habits one small step at a time (hence the name Waddle). You will be able to join groups that are tied to specific habits where those in the group will see your progress to help keep you accountable. There are more features listed in the "Planned Features" section.
+Waddle is currently in development which is why this page is well... bland. The purpose of the app is to help people build habits one small step at a time (hence the name Waddle). You will be able to join groups that are tied to specific habits where those in the group will see your progress to help keep you accountable. There are more features listed in the next section.
 
 ### Planned Features
 - Habit tracking

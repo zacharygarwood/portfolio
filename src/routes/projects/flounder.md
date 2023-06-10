@@ -5,13 +5,13 @@ date: "2023-06-06"
 description: "UCI compatible chess engine written in Rust. In the beginning it had a fitting name (it wasn't good), but now can consistently beat it's creator. You can challenge it on lichess @FlounderBot."
 ---
 
-<img alt="Flounder's Best Game" src="/assets/flounders-best-game.gif" width="400" height="400" />
+<img alt="Flounder's Best Game" src="/assets/flounders-best-game.gif" width="400" height="400" style="margin-right: 20px"/>
 
 Note: My favorite game. Playing as the black pieces.
 
 
 ### Introduction
-Flounder is a UCI (Universal Chess Interface) compatible chess engine written in Rust. Despite its unassuming name, Flounder has grown into a serious competitor (~1800 ELO), consistently outperforming its own creator. If you are up to the test, you can challenge it on Lichess <a href="https://lichess.org/@/FlounderBot" class="link" target="_blank">@FlounderBot</a>! 
+Flounder is a <a href="https://www.chessprogramming.org/UCI" class="link" target="_blank">UCI</a> compatible chess engine written in Rust. Despite its unassuming name, Flounder has grown into a serious competitor (~1800 ELO), consistently outperforming its own creator. If you are up to the test, you can challenge it on Lichess <a href="https://lichess.org/@/FlounderBot" class="link" target="_blank">@FlounderBot</a>! 
 Just a heads up, Flounder may be busy competing against other bots or offline.
 
 ### Why did I make it
@@ -24,9 +24,9 @@ Flounder's development involved implementing a variety of algorithms and techniq
 
 Flounder uses <a href="https://www.chessprogramming.org/PV-Move" class="link" target="_blank">PV-Move</a>, <a href="https://www.chessprogramming.org/Hash_Move" class="link" target="_blank">Hash Move</a>, and <a href="https://www.chessprogramming.org/MVV-LVA" class="link" target="_blank">MVV-LVA</a> move ordering to prioritize moves that are likely to be the best in a given position. This greatly reduces the total number of positions that need to be evaluated as it prunes large portions of the game tree. For example, in the starting position after six moves there are 119,060,324 different positions. After these optimizations, that number for me reduced down to 277,296 positions, a 99.76% decrease!
 
-Evaluating positions is done quickly with the use of <a href="https://www.chessprogramming.org/Piece-Square_Tables" class="link" target="_blank">piece-square tables</a> and <a href="https://www.chessprogramming.org/Material" class="link" target="_blank">material counting</a>. The evaluation of positions and their corresponding best moves are stored in a <a href="https://www.chessprogramming.org/Transposition_Table" class="link" target="_blank">transposition table</a> implemented with <a href="https://www.chessprogramming.org/Zobrist_Hashing" class="link" target="_blank">Zobrist hashing</a>. This enables Flounder to store and retrieve previously evaluated positions quickly.
+Evaluating positions is done quickly with the use of <a href="https://www.chessprogramming.org/Piece-Square_Tables" class="link" target="_blank">piece-square tables</a> and <a href="https://www.chessprogramming.org/Material" class="link" target="_blank">material counting</a>. The evaluation of positions and their corresponding best moves are stored in a <a href="https://www.chessprogramming.org/Transposition_Table" class="link" target="_blank">transposition table</a> that was implemented with <a href="https://www.chessprogramming.org/Zobrist_Hashing" class="link" target="_blank">Zobrist hashing</a>. This enables Flounder to store and retrieve previously evaluated positions avoiding redundant computations.
 
-With chess engines, it is crucial to test your code to make sure everything works as chess has a very high branching factor. Below is a table showing the number of possible positions after a given amount of moves from the starting position. As there are so many different possibilities, one small mistake could have huge consequences. Flounder implements <a href="https://www.chessprogramming.org/Perft" class="link" target="_blank">perft</a> short for "performance test" to verify that the move generation is working as intended.
+Chess has a very high branching factor making it is crucial to test your code. Below is a table showing the number of possible positions after a given amount of moves from the starting position. As there are so many different possibilities, one small mistake could have huge consequences. Flounder implements <a href="https://www.chessprogramming.org/Perft" class="link" target="_blank">perft</a> short for "performance test" to verify that the move generation is working as intended.
 
 | Depth	| Nodes	                            |
 |-------|----------------------------------:|
