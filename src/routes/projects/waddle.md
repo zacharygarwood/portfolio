@@ -19,7 +19,7 @@ Waddle is currently in development which is why this page is well... bland. The 
 
 ### Sneak Peek 🤫
 
-Come back later to see the finished product! 😄
+Come back later to see the finished product!
 
 <img alt="Waddle Sneak Peek" src="/assets/waddle-design.png"/>
 
