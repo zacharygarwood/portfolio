@@ -25,9 +25,9 @@ After these steps the result was a CSV that looked something like this:
   <tr>
     <th>Username</th>
     <th>Rank</th>
-    <th>HS %</th>
+    <th>HS%</th>
     <th>DPR</th>
-    <th>Win %</th>
+    <th>Win%</th>
     <th>Date</th>
   </tr>
   <tr>
@@ -88,12 +88,22 @@ I'm not sure I'll get around to implementing it, but it would have been really c
 
     .table {
         border-collapse: collapse;
+        width: 100%;
+        height: 100%;
     }
 
     .table th,
     .table td {
         border: 1px solid black;
         padding: 8px;
+    }
+
+    @media (max-width: 600px) {
+        .table th,
+        .table td {
+            font-size: 12px;
+            padding: 6px;
+        }
     }
 
 </style>

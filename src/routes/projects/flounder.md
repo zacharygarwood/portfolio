@@ -131,4 +131,12 @@ Lastly, Flounder searches at a fixed depth as of right now. This isn't a big iss
         border: 1px solid black;
         padding: 8px;
     }
+
+    @media (max-width: 600px) {
+        .table th,
+        .table td {
+            font-size: 12px;
+            padding: 6px;
+        }
+    }
 </style>
