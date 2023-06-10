@@ -53,7 +53,8 @@
     <p>If you think I'm a good fit for your company feel free to reach out!</p>
     <ul>
       <li><a href="https://github.com/zacharygarwood" class="link" target="_blank">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/zachary-garwood/" class="link" target="_blank">Linkedin</a></li>
+      <li><a href="https://www.linkedin.com/in/zachary-garwood/" class="link" target="_blank">LinkedIn</a></li>
+      <li><a href="mailto:garwoodzachary@gmail.com" class="link" target="_blank">Email</a></li>
     </ul>
   </div>
 </div>

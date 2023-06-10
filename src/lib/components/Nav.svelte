@@ -52,7 +52,9 @@
 
 <style>
     nav {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
     }
 
     a {
