@@ -5,7 +5,7 @@ date: "2023-06-06"
 description: "UCI compatible chess engine written in Rust. In the beginning it had a fitting name (it wasn't good), but now can consistently beat it's creator. You can challenge it on lichess @FlounderBot."
 ---
 
-<img alt="Flounder's Best Game" src="/assets/flounders-best-game.gif" width="400" height="400" style="margin-right: 20px"/>
+<img alt="Flounder's Best Game" src="/assets/flounders-best-game.gif" width="100%" height="100%" style="margin-right: 20px"/>
 
 Note: My favorite game. Playing as the black pieces.
 

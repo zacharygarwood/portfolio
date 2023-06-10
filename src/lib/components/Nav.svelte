@@ -24,60 +24,35 @@
     };
 </script>
 
-<header>
-    <nav>
-        <ul>
-            <li>
-                <a
-                    href="/"
-                    class:active={activeLink === "/"}
-                    on:click={() => navigateTo("/")}
-                >
-                    Home
-                </a>
-            </li>
-            <li>
-                <a
-                    href="/projects"
-                    class:active={activeLink === "/projects"}
-                    on:click={() => navigateTo("/projects")}
-                >
-                    Projects
-                </a>
-            </li>
-            <li>
-                <a
-                    href="/work"
-                    class:active={activeLink === "/work"}
-                    on:click={() => navigateTo("/work")}
-                >
-                    Work
-                </a>
-            </li>
-            <li>
-                <a
-                    href="/contact"
-                    class:active={activeLink === "/contact"}
-                    on:click={() => navigateTo("/contact")}
-                >
-                    Contact
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
+
+<nav>
+    <a
+        href="/"
+        class:active={activeLink === "/"}
+        on:click={() => navigateTo("/")}
+        >
+        Home
+    </a>
+    <a
+        href="/projects"
+        class:active={activeLink === "/projects"}
+        on:click={() => navigateTo("/projects")}
+        >
+        Projects
+    </a>
+    <a
+        href="/work"
+        class:active={activeLink === "/work"}
+        on:click={() => navigateTo("/work")}
+        >
+        Work
+    </a>
+</nav>
+
 
 <style>
-    header {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    ul {
-        list-style-type: none;
-        display: flex;
-        gap: 1rem;
-        padding: 0;
+    nav {
+        display: block;
     }
 
     a {
@@ -85,6 +60,7 @@
         color: inherit;
         font-size: 1.5rem;
         position: relative;
+        margin-right: 1rem;
     }
 
     a::after {
