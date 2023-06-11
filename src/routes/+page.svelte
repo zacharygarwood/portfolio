@@ -44,8 +44,8 @@
 
     <p>If you are in a rush, here's a little about me:</p>
     <ul>
-      <li>Software engineer looking for new an exciting opportunities</li>
-      <li>Interned at Amazon and Principal Financial Group</li>
+      <li>Software engineer looking for new and exciting opportunities</li>
+      <li>Interned at Amazon and Principal</li>
       <li>Graduated from Iowa State University in May 2023</li>
       <li>Skills: Python, Java, Rust, C, C++, SQL, Javascript, HTML, CSS</li>
     </ul>
