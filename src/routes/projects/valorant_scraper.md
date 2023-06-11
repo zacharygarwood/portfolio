@@ -9,7 +9,7 @@ description: "Gathers statistics on players that I played with to determine if t
 Valorant Scraper is a web scraping application designed for the popular video game Valorant (who would've guessed). It gathers statistics from people I played with and stores the cleaned data into a CSV. This data was then used to create a variety of visualizations to gain insight that you can find below!
 
 ### Why did I make it
-I've always been an FPS guy when it comes to gaming. Back when I worked on this project, Valorant was just coming out and I had a blast playing games it friends. I found the ranking system very interesting, and I became very curious as to how the rank was determined for a player. I thought it would be fun to scrape statistics from people I played with to make a dataset, and then graph the information against the player's rank to see if there was any correlation. 
+I've always been an FPS guy when it comes to gaming. Back when I worked on this project, Valorant was just coming out and I had a blast playing it with friends. I found the ranking system very interesting, and I became curious as to how the rank was determined for a player. I thought it would be fun to scrape statistics from people I played with, and then graph the data against the player's rank to see if there was any correlation. 
 
 ### Development
 Valorant Scraper was created in Java and used Selenium to scrape the relevant player information. All of the information was obtained from <a href="https://tracker.gg/valorant" class="link" target="_blank">Tracker.gg</a>. Below is the process I took to scrape all the information:

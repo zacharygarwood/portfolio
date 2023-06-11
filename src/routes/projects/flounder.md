@@ -6,7 +6,7 @@ description: "UCI compatible chess engine written in Rust. In the beginning it h
 ---
 
 <img alt="Flounder's Best Game" src="/assets/flounder/flounders-best-game.gif" width="100%" height="100%" style="margin-right: 20px"/>
-Note: My favorite game. Playing as the black pieces.
+Note: My favorite game. Flounder is the black pieces.
 
 ### Introduction
 Flounder is a <a href="https://www.chessprogramming.org/UCI" class="link" target="_blank">UCI</a> compatible chess engine written in Rust. Despite its unassuming name, Flounder has grown into a serious competitor (~1800 ELO), consistently outperforming its own creator. If you are up to the test, you can challenge it on Lichess <a href="https://lichess.org/@/FlounderBot" class="link" target="_blank">@FlounderBot</a>! 
@@ -106,7 +106,7 @@ At the moment, Flounder's Achilles' heel is that it doesn't understand what a <a
 
 Afterwards, there are many optimizations that can still be made like switching to <a href="https://www.chessprogramming.org/Principal_Variation_Search" class="link" target="_blank">Principal Variation Search</a> over Negamax. Null move pruning, late move reductions, and the killer move hueristic can be implemented to further improve performance allowing for Flounder to search to greater depths.
 
-Lastly, Flounder searches at a fixed depth as of right now. This isn't a big issue as it already plays pretty fast, and is why it is probably the last thing I'll implement. To allow it to search at varying depths, I'm going to add in some sort of time management allowing it to search while the opponent is thinking. Because it has more time to search, it will be able to search to higher depths. This will also help avoid flagging in the rare scenarios that it does.
+Lastly, Flounder searches at a fixed depth as of right now. This isn't a big issue as it plays pretty fast, and is why it is probably the last thing I'll implement. To allow it to search at varying depths, I'm going to add in time management allowing it to search while the opponent is thinking. Because it has more time to search, it will be able to search to higher depths. This will also help avoid flagging, in the rare scenarios that it does, as the search depth could be reduced.
 
 #### Thanks for reading!
 
