@@ -6,9 +6,7 @@ description: "UCI compatible chess engine written in Rust. In the beginning it h
 ---
 
 <img alt="Flounder's Best Game" src="/assets/flounder/flounders-best-game.gif" width="100%" height="100%" style="margin-right: 20px"/>
-
 Note: My favorite game. Playing as the black pieces.
-
 
 ### Introduction
 Flounder is a <a href="https://www.chessprogramming.org/UCI" class="link" target="_blank">UCI</a> compatible chess engine written in Rust. Despite its unassuming name, Flounder has grown into a serious competitor (~1800 ELO), consistently outperforming its own creator. If you are up to the test, you can challenge it on Lichess <a href="https://lichess.org/@/FlounderBot" class="link" target="_blank">@FlounderBot</a>! 
@@ -113,30 +111,32 @@ Lastly, Flounder searches at a fixed depth as of right now. This isn't a big iss
 #### Thanks for reading!
 
 <style>
-    .link {
-        color: #0000FF;
-        text-decoration: none;
-    }
+  .link {
+    color: #0000FF;
+    text-decoration: none;
+  }
 
-    .link:hover {
-        text-decoration: underline;
-    }
+  .link:hover {
+    text-decoration: underline;
+  }
 
-    .table {
-        border-collapse: collapse;
-    }
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+  }
 
+  .table th,
+  .table td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  @media (max-width: 600px) {
     .table th,
     .table td {
-        border: 1px solid black;
-        padding: 8px;
+      font-size: 12px;
+      padding: 6px;
     }
-
-    @media (max-width: 600px) {
-        .table th,
-        .table td {
-            font-size: 12px;
-            padding: 6px;
-        }
-    }
+  }
 </style>

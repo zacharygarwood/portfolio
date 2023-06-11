@@ -12,7 +12,7 @@ Autoclip is a program designed to automate the process of posting popular clips 
 Note: Autoclip is no longer posting videos as I don't want to run into any copyright issues 😅, but it was fun while it lasted! 
 
 ### Why did I make it
-When scrolling through YouTube, I realized that a lot of the videos that were being recommended to me involved short clips from Twitch streamers that I watched. I thought to myself, "If I am getting recommended this type of video, then other people are as well. Might as well automate the process of creating these videos and see what happens!" 
+When scrolling through YouTube, I realized a lot of the videos that were being recommended to me involved short clips from Twitch streamers that I watched. I thought to myself, "If I am getting recommended this type of video, then other people are as well. Might as well automate the process of creating these videos and see what happens!" 
 
 ### Development
 
