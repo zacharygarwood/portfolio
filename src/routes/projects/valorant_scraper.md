@@ -2,7 +2,7 @@
 title: Valorant Scraper
 tags: Java, Python, Selenium, Pyplot, Data Analysis
 date: "2021-10-15"
-description: "Gathers statistics on players that I played with to determine if there was a correlation between ranks and certain statistics."
+description: "Program that gathers statistics on players that I faced to determine if there was a correlation between ranks and certain statistics."
 link: https://github.com/zacharygarwood/Valorant-Scraper
 ---
 
