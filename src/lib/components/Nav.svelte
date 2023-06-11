@@ -6,12 +6,10 @@
 
     const setActiveLink = (link) => {
         activeLink = link;
-        localStorage.setItem("activeLink", link); // Store the active link in local storage
     };
 
     onMount(() => {
-        const storedLink = localStorage.getItem("activeLink");
-        setActiveLink(storedLink || "/");
+        setActiveLink("/");
     });
 
     onDestroy(() => {
