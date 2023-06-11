@@ -34,7 +34,7 @@
     }
 
     .icon-container svg path {
-      fill: inherit;
+      fill: #333;
     }
 </style>
 
