@@ -3,6 +3,7 @@ title: Flounder
 tags: Chess Engine, Rust
 date: "2023-06-06"
 description: "UCI compatible chess engine written in Rust. In the beginning it had a fitting name (it wasn't good), but now can consistently beat it's creator. You can challenge it on lichess @FlounderBot."
+link: https://github.com/zacharygarwood/Flounder
 ---
 
 <img alt="Flounder's Best Game" src="/assets/flounder/flounders-best-game.gif" width="100%" height="100%" style="margin-right: 20px"/>

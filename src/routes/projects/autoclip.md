@@ -3,6 +3,7 @@ title: Autoclip
 tags: Python, Selenium, Twitch API, Automation
 date: "2021-07-18"
 description: "Automated program that gathers the top Twitch clips of the day, edits them together, and posts them to YouTube. Accumulated over 16,000 views."
+link: https://github.com/zacharygarwood/Autoclip
 ---
 
 ### Introduction:

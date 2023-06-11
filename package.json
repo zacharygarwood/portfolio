@@ -18,6 +18,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-static": "^2.0.2",
 		"svelte-routing": "^1.10.0"
 	}
 }

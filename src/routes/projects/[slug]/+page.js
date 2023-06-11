@@ -1,6 +1,6 @@
 export async function load({ params }) {
   const project = await import(`../${params.slug}.md`)
-  const { title, tags, date } = project.metadata
+  const { title, tags, date, link } = project.metadata
   const content = project.default
 
   return {
@@ -8,5 +8,6 @@ export async function load({ params }) {
     title,
     tags,
     date,
+    link,
   }
 }
