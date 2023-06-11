@@ -21,6 +21,15 @@ Waddle is currently in development which is why this page is well... bland. The 
 ### Sneak Peek 🤫
 Come back later to see the finished product!
 
-<img alt="Waddle Sneak Peek" src="/assets/waddle/waddle-design.png"/>
+<img alt="Waddle Sneak Peek" src="/assets/waddle/waddle-design.png" width="75%" height="75%"/>
 
 #### Thanks for reading!
+
+<style>
+    @media (max-width: 600px) {
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+</style>

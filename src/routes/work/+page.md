@@ -8,7 +8,7 @@ the needs of a new Salesforce organization with over 200 users
 - Modified and verified the access for over 20 personas throughout the organization in preparation for end-to-end
 testing before the launch of the organization
 
-# Principal Financial Group
+# Principal
 _Software Engineer Intern | May 2021 - Aug 2021_
 - Streamlined the user experience in an internal bulk upload application by providing notifications on the status of
 the upload and improving the error messages by using Java receiving positive feedback from users.
