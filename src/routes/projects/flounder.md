@@ -107,7 +107,7 @@ At the moment, Flounder's Achilles' heel is that it doesn't understand what a <a
 
 Afterwards, there are many optimizations that can still be made like switching to <a href="https://www.chessprogramming.org/Principal_Variation_Search" class="link" target="_blank">Principal Variation Search</a> over Negamax. Null move pruning, late move reductions, and the killer move hueristic can be implemented to further improve performance allowing for Flounder to search to greater depths.
 
-Lastly, Flounder searches at a fixed depth as of right now, and it would be nice to have varying search depths. Varying depths would allow Flounder to search to greater depths when it has the time to do so and speed up when it is in time trouble. To implement this, I am going to add in time management which will give Flounder the necessary information to determine the duration it can search for.
+Lastly, Flounder searches at a fixed depth as of right now, and it would be nice to have varying search depths. Varying depths would allow Flounder to search deeper when it has the time to do so and speed up when it is in time trouble. To implement this, I am going to add in time management which will give Flounder the necessary information to determine the duration it can search for.
 
 #### Thanks for reading!
 
