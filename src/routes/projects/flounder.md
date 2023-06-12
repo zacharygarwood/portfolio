@@ -16,7 +16,7 @@ Just a heads up, Flounder may be busy competing against other bots or offline.
 ### Why did I make it
 I had read many great things about Rust online, specifically that it was the <a href="https://survey.stackoverflow.co/2022/#technology-most-loved-dreaded-and-wanted" class="link" target="_blank">most loved programming language</a> in 2022, and that it had performance similar to C++. I have worked with manual and automatic memory mangement languages like C and Python respectively, but the concept of ownership in Rust was new to me and made it the logical next thing to learn.
 
-Back in 2020, I began playing chess and might have gotten slightly addicted. With this love for chess and desire to learn Rust, I decided making a chess engine would be a fun endeavor.
+Back in 2020, I began playing chess and let's just say I might have gotten slightly addicted. With this love for chess and desire to learn Rust, I decided making a chess engine would be a fun endeavor.
 
 ### Development
 Flounder's development involved implementing a variety of algorithms and techniques. It uses methods like <a href="https://www.chessprogramming.org/Bitboards" class="link" target="_blank">bitboards</a> and <a href="https://www.chessprogramming.org/Magic_Bitboards" class="link" target="_blank">magic bitboards</a> to efficiently represent the board and generate legal moves. Various search techniques such as <a href="https://www.chessprogramming.org/Alpha-Beta" class="link" target="_blank">negamax with alpha-beta pruning</a>, <a href="https://www.chessprogramming.org/Quiescence_Search" class="link" target="_blank">quiescence search</a>, and <a href="https://www.chessprogramming.org/Iterative_Deepening" class="link" target="_blank">iterative deepening</a> are implemented to improve the search efficiency and strengthen play. 
@@ -107,7 +107,7 @@ At the moment, Flounder's Achilles' heel is that it doesn't understand what a <a
 
 Afterwards, there are many optimizations that can still be made like switching to <a href="https://www.chessprogramming.org/Principal_Variation_Search" class="link" target="_blank">Principal Variation Search</a> over Negamax. Null move pruning, late move reductions, and the killer move hueristic can be implemented to further improve performance allowing for Flounder to search to greater depths.
 
-Lastly, Flounder searches at a fixed depth as of right now. This isn't a big issue as it plays pretty fast, and is why it is probably the last thing I'll implement. To allow it to search at varying depths, I'm going to add in time management allowing it to search while the opponent is thinking. Because it has more time to search, it will be able to search to higher depths. This will also help avoid flagging, in the rare scenarios that it does, as the search depth could be reduced.
+Lastly, Flounder searches at a fixed depth as of right now, and it would be nice to have varying search depths. Varying depths would allow Flounder to search to greater depths when it has the time to do so and speed up when it is in time trouble. To implement this, I am going to add in time management which will give Flounder the necessary information to determine the duration it can search for.
 
 #### Thanks for reading!
 
