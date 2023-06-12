@@ -9,7 +9,7 @@
     };
 
     onMount(() => {
-        setActiveLink("/");
+        setActiveLink(window.location.pathname);
     });
 
     onDestroy(() => {
