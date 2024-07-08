@@ -6,7 +6,7 @@
 
 <footer class="-mx-4 mb-6 mt-12">
     <address class="flex items-center justify-center gap-1 not-italic sm:gap-6">
-        <Button href={PERSONAL_LINKS["linkedin"]} target="_blank" variant="ghost" class="px-3 text-zinc-500 dark:text-zinc-400">
+        <Button href={PERSONAL_LINKS["github"]} target="_blank" variant="ghost" class="px-3 text-zinc-500 dark:text-zinc-400">
             <Github class="mr-2 h-4 w-4" />
             GitHub
         </Button>
