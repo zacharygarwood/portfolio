@@ -1,0 +1,52 @@
+body {
+    margin: 20px; 
+    font-family: "Georgia", "Times New Roman", "Times", monospace;
+    font-size: 16px;
+
+    background-color: rgb(45,37,37);
+    color: rgb(255,232,198);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+img {
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.column {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: orange;
+}
