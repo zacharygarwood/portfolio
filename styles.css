@@ -29,11 +29,13 @@ img {
 }
 
 h1 {
+    color: burlywood;
     font-size: 28px;
     font-weight: 500;
 }
 
 h2 {
+    color: burlywood;
     font-size: 22px;
     font-weight: 500;
 }
