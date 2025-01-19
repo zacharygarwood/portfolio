@@ -29,43 +29,94 @@
 </head>
 
 <body>
-    <div class="column">
-        <img src="images/picture.jpg" alt="Nature." , width="100%">
-        <h1>Hey, I'm Zach</h1>
+    <div class="container">
+        <a href="/" class="header">
+            <h4>Zachary Garwood</h4>
+        </a>
+        <img src="images/picture.jpg" alt="Lake" ,="" width="100%">        
         <p>
-            Welcome to my little corner of the internet :)<br><br>
-            I'm a software engineer at <a href="https://https://freight.amazon.com/" target="_blank">Amazon</a> working on externalizing our middle-mile transportation network. 
-            I graduated from <a href="https://se.iastate.edu/" target="_blank">Iowa State University</a> in 2023 with a degree in software engineering.<br><br>
-            I'm interested in a variety of topics, including compilers, high-performance computing, and machine learning. I try to learn new things whenever possible.<br><br>
-            If there's anything you should know about me, it's that I like freezer-burnt ice cream and that my favorite color is brown.
+            I'm a software engineer at <a href="https://freight.amazon.com/" target="_blank">Amazon</a> working on externalizing our middle-mile
+            transportation network. Previsouly, I worked for <a href="https://aws.amazon.com/" target="_blank">AWS</a>, <a href="https://www.principal.com/" target="_blank">Principal</a>, and <a href="https://www.iastate.edu/" target="_blank">Iowa State University</a>. 
         </p>
-        <h2>Experience</h2>
-        <ul>
-            <li>Software engineer @ <a href="https://https://freight.amazon.com/" target="_blank">Amazon</a> &mdash; Jan 2024 ~ Current</li>
-            <li>Software engineer intern @ <a href="https://aws.amazon.com/professional-services/" target="_blank">AWS</a> &mdash; May 2022 ~ Aug 2022</li>
-            <li>Software engineer intern @ <a href="https://www.principal.com/" target="_blank">Principal</a> &mdash; May 2021 ~ Aug 2021</li>
-            <li>Teaching Assistant @ <a href="https://se.iastate.edu/" target="_blank">Iowa State University</a> &mdash; Jan 2021 ~ May 2021</li>
-        </ul>
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/zacharygarwood/Flounder" target="_blank">Flounder</a> &mdash; UCI compatible chess engine (~2000 ELO)</li>
-            <li><a href="https://github.com/zacharygarwood/Decoy" target="_blank">Decoy</a> &mdash; Password management system with no storage</li>
-            <li><a href="https://github.com/zacharygarwood/Minecraft-as-File-Storage" target="_blank">Mafs</a> &mdash; Minecraft as file storage</li>
-            <li><a href="https://github.com/zacharygarwood/Autoclip" target="_blank">Autoclip</a> &mdash; Automatically posts the top Twitch clips to YouTube (~20k views)</li>
-            <li><a href="https://github.com/zacharygarwood/Valorant-Scraper" target="_blank">Valorant Scraper</a> &mdash; Retrieve stats on a given user</li>
-            <li><a href="https://github.com/zacharygarwood/edge_detection" target="_blank">Edge Detection</a> &mdash; Finds edges in an image</li>
-            <li><a href="https://github.com/zacharygarwood/object_tracking" target="_blank">Object Tracking</a> &mdash; Motion tracking of a tennis ball</li>
-            <li><a href="https://github.com/zacharygarwood/face_detection" target="_blank">Face Detection</a> &mdash; Places boxes around faces in a video</li>
-        </ul>
-        <h2>Links</h2>
         <p>
-            <a href="https://github.com/zacharygarwood" target="_blank">GitHub</a>&nbsp;|&nbsp;
-            <a href="https://www.linkedin.com/in/zachary-garwood/" target="_blank">LinkedIn</a>&nbsp;|&nbsp;
-            <a href="/images/zachary_garwood_resume.pdf" target="_blank">Resume</a>
+            I love to dig into the nitty gritty details of software and make things fast. You can get a glimpse of what I'm learning in my <a href="/til">Today I Learned</a> collection of notes.
         </p>
+        <p class="project-header">Notable open-source work:</p>
+        <div class="projects-container">                
+            <div class="project-row">
+                <a href="https://github.com/zacharygarwood/Flounder" class="project-pair" target="_blank">
+                    <div class="project-title">
+                        Flounder
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </div>
+                </a>
+                <div class="project-content">
+                    <p class="project-description">2000-rated UCI compatible chess engine</p>
+                    <div class="project-aside">Play it on Lichess @FlounderBot</div>
+                </div>
+            </div>
+            <div class="project-row">
+                <a href="https://github.com/zacharygarwood/Decoy" class="project-pair" target="_blank">
+                    <div class="project-title">
+                        Decoy
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </div>
+                </a>
+                <div class="project-content">
+                    <p class="project-description">Password management system without the storage</p>
+                </div>
+            </div>
+            <div class="project-row">
+                <a href="https://github.com/zacharygarwood/Minecraft-as-File-Storage" class="project-pair" target="_blank">
+                    <div class="project-title">
+                        mafs
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </div>
+                </a>
+                <div class="project-content">
+                    <p class="project-description">Minecraft as file storage</p>
+                    <div class="project-aside">Storage as far as the eye can see</div>
+                </div>
+            </div>
+            <div class="project-row">
+                <a href="https://github.com/zacharygarwood/Autoclip" class="project-pair" target="_blank">
+                    <div class="project-title">
+                        Autoclip
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </div>
+                </a>
+                <div class="project-content">
+                    <p class="project-description">Automatically posts the top Twitch clips to YouTube</p>
+                    <div class="project-aside">30k+ views</div>
+                </div>
+            </div>
+        </div>
+        <p>If there is anything you should know about me, it's that I like freezer-burnt ice cream and my favorite color is brown.</p>
+        <p>
+            See you on the slopes
+            <a href="https://www.youtube.com/watch?v=zgrciy3Bi-s" target="_blank">
+                <img src="images/sled.png" alt="Club Penguin sled" height="20" style="vertical-align: middle;">
+            </a>
+        </p>
+        <div class="footer">
+            <p>GitHub:  <a href="https://github.com/zacharygarwood" target="_blank">@zacharygarwood</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/zacharygarwood/" target="_blank">@zacharygarwood</a></p>
+            <p>Email: <a href="https://www.base64decode.org/" target="_blank">Z2Fyd29vZHphY2hhcnlAZ21haWwuY29t</a></p>
+        </div>
     </div>
 </body>
-
 </html>
 
 
@@ -87,3 +138,4 @@
 ⠀⠀⠀⠀⠀⠀⠙⢧⣀⠀⠀⣠⠏⠀⠀⢀⣀⣠⠴⠛⠓⠚⠋⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠋⠉⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
 -->
+
