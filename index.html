@@ -33,7 +33,8 @@
         <a href="/" class="header">
             <h4>Zachary Garwood</h4>
         </a>
-        <img src="images/picture.jpg" alt="Lake" ,="" width="100%">        
+        <img src="images/picture.jpg" alt="Lake" ,="" width="100%">
+        <h4 class="section-header">About me</h4>
         <p>
             I'm a software engineer at <a href="https://dropbox.com/" target="_blank">Dropbox</a> working on the sync engine and desktop client. 
             Previously, I worked at <a href="https://freight.amazon.com/" target="_blank">Amazon</a> on externalizing our middle-mile transportation network, <a href="https://www.principal.com/" target="_blank">Principal</a>, and <a href="https://www.iastate.edu/" target="_blank">Iowa State University</a>. 
@@ -41,82 +42,162 @@
         <p>
             I love to dig into the nitty gritty details of software and make things usable and performant. You can get a glimpse of what I'm working on in my projects below.
         </p>
-        <div class="projects-container">
-            <div class="project-row">
-                <a href="https://github.com/zacharygarwood/garboy" class="project-pair" target="_blank">
-                    <div class="project-title">
-                        Garboy
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
+        <h4 class="section-header">Projects</h4>
+        <div class="projects-grid">
+            <a href="https://quietfold.com" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <img src="images/quietfold.png" alt="Quietfold" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-card-title">Quietfold</div>
+                        <p class="project-description">RSS feed generator</p>
+                    </div>
+                    <div class="project-tap-hint">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
                         </svg>
                     </div>
-                </a>
-                <div class="project-content">
-                    <p class="project-description">Gameboy Emulator</p>
-                    <div class="project-aside">To be the very best, like no one ever was</div>
                 </div>
-            </div>
-            <div class="project-row">
-                <a href="https://github.com/zacharygarwood/Flounder" class="project-pair" target="_blank">
-                    <div class="project-title">
-                        Flounder
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
+            </a>
+            <a href="https://github.com/zacharygarwood/Flounder" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <div id="flounder-media"><video src="images/flounder.mp4" class="project-image" autoplay loop muted playsinline></video></div>
+                    <div class="project-overlay">
+                        <div class="project-card-title">Flounder</div>
+                        <p class="project-description">2000-rated UCI compatible chess engine</p>
+                        <div class="project-aside">Play it on Lichess @FlounderBot</div>
+                    </div>
+                    <div class="project-tap-hint">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
                         </svg>
                     </div>
-                </a>
-                <div class="project-content">
-                    <p class="project-description">2000-rated UCI compatible chess engine</p>
-                    <div class="project-aside">Play it on Lichess @FlounderBot</div>
                 </div>
-            </div>
-            <div class="project-row">
-                <a href="https://github.com/zacharygarwood/Decoy" class="project-pair" target="_blank">
-                    <div class="project-title">
-                        Decoy
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
+            </a>
+            <a href="https://github.com/zacharygarwood/garboy" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <img src="images/pokemon.gif" alt="Garboy" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-card-title">Garboy</div>
+                        <p class="project-description">Gameboy Emulator</p>
+                        <div class="project-aside">To be the very best, like no one ever was</div>
+                    </div>
+                    <div class="project-tap-hint">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
                         </svg>
                     </div>
-                </a>
-                <div class="project-content">
-                    <p class="project-description">Password management system</p>
-                    <div class="project-aside">Without the storage</div>
                 </div>
-            </div>
-            <div class="project-row">
-                <a href="https://github.com/zacharygarwood/Minecraft-as-File-Storage" class="project-pair" target="_blank">
-                    <div class="project-title">
-                        mafs
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
+            </a>
+            <a href="https://github.com/zacharygarwood/minecraft-as-file-storage" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <video src="images/mafs.mp4" class="project-image" autoplay loop muted playsinline></video>
+                    <div class="project-overlay">
+                        <div class="project-card-title">mafs</div>
+                        <p class="project-description">Minecraft as file storage</p>
+                        <div class="project-aside">Storage as far as the eye can see</div>
+                    </div>
+                    <div class="project-tap-hint">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
                         </svg>
                     </div>
-                </a>
-                <div class="project-content">
-                    <p class="project-description">Minecraft as file storage</p>
-                    <div class="project-aside">Storage as far as the eye can see</div>
                 </div>
-            </div>
-            <div class="project-row">
-                <a href="https://github.com/zacharygarwood/Autoclip" class="project-pair" target="_blank">
-                    <div class="project-title">
-                        Autoclip
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
+            </a>
+            <a href="https://github.com/zacharygarwood/edge-detection" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <video src="images/edge-detection.mp4" class="project-image" autoplay loop muted playsinline></video>
+                    <div class="project-overlay">
+                        <div class="project-card-title">Edge Detection</div>
+                        <p class="project-description">Computer vision edge detection</p>
+                    </div>
+                    <div class="project-tap-hint">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
                         </svg>
                     </div>
-                </a>
-                <div class="project-content">
-                    <p class="project-description">Automatically posts the top Twitch clips to YouTube</p>
-                    <div class="project-aside">30k+ views</div>
                 </div>
-            </div>
+            </a>
+            <a href="https://prod.computer" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <img src="images/prodcomputer.jpg" alt="prod.computer" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-card-title">prod.computer</div>
+                        <p class="project-description">Running the internet</p>
+                    </div>
+                    <div class="project-tap-hint">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/zacharygarwood/autoclip" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <img src="images/autoclip.png" alt="Autoclip" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-card-title">Autoclip</div>
+                        <p class="project-description">Automatically posts the top Twitch clips to YouTube</p>
+                        <div class="project-aside">30k+ views</div>
+                    </div>
+                    <div class="project-tap-hint">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/zacharygarwood/valorant-scraper" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <img src="images/pairplot.png" alt="Valorant Scraper" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-card-title">Valorant Scraper</div>
+                        <p class="project-description">Player statistics scraper</p>
+                    </div>
+                    <div class="project-tap-hint">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/zacharygarwood/decoy" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <img src="images/diagram.png" alt="Decoy" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-card-title">Decoy</div>
+                        <p class="project-description">Password management system</p>
+                        <div class="project-aside">Without the storage</div>
+                    </div>
+                    <div class="project-tap-hint">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <h4 class="section-header">Contact</h4>
+        <div class="footer">
+            <p>GitHub:  <a href="https://github.com/zacharygarwood" target="_blank">@zacharygarwood</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/zacharygarwood/" target="_blank">@zacharygarwood</a></p>
         </div>
         <p>
             See you on the slopes
@@ -124,11 +205,39 @@
                 <img src="images/sled.png" alt="Club Penguin sled" height="20" style="vertical-align: middle;">
             </a>
         </p>
-        <div class="footer">
-            <p>GitHub:  <a href="https://github.com/zacharygarwood" target="_blank">@zacharygarwood</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/zacharygarwood/" target="_blank">@zacharygarwood</a></p>
-        </div>
     </div>
+    <script>
+        document.querySelectorAll('.project-card').forEach(function(card) {
+            card.addEventListener('click', function(e) {
+                if (window.matchMedia('(hover: none)').matches && !this.classList.contains('tapped')) {
+                    e.preventDefault();
+                    this.classList.add('tapped');
+                }
+            });
+        });
+
+        var flounderGameId = null;
+        function checkFlounderLive() {
+            fetch('https://lichess.org/api/user/flounderbot')
+                .then(function(res) { return res.json(); })
+                .then(function(data) {
+                    var media = document.getElementById('flounder-media');
+                    if (data.playing) {
+                        var gameId = data.playing.split('/').pop();
+                        if (gameId !== flounderGameId) {
+                            flounderGameId = gameId;
+                            media.innerHTML = '<iframe src="https://lichess.org/embed/game/' + gameId + '?theme=brown&bg=light" class="project-image" frameborder="0"></iframe>';
+                        }
+                    } else if (flounderGameId !== null) {
+                        flounderGameId = null;
+                        media.innerHTML = '<video src="images/flounder.mp4" class="project-image" autoplay loop muted playsinline></video>';
+                    }
+                })
+                .catch(function() {});
+        }
+        checkFlounderLive();
+        setInterval(checkFlounderLive, 30000);
+    </script>
 </body>
 </html>
 
