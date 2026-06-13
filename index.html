@@ -62,7 +62,7 @@
             </a>
             <a href="https://github.com/zacharygarwood/Flounder" class="project-card" target="_blank">
                 <div class="project-image-wrapper">
-                    <div id="flounder-media"><video src="images/flounder.mp4" class="project-image" autoplay loop muted playsinline></video></div>
+                    <iframe src="https://lichess.org/@/FlounderBot/tv?bg=light&theme=brown" class="project-image" frameborder="0" allowtransparency="true"></iframe>
                     <div class="project-overlay">
                         <div class="project-card-title">Flounder</div>
                         <p class="project-description">2000-rated UCI compatible chess engine</p>
@@ -215,28 +215,6 @@
                 }
             });
         });
-
-        var flounderGameId = null;
-        function checkFlounderLive() {
-            fetch('https://lichess.org/api/user/flounderbot')
-                .then(function(res) { return res.json(); })
-                .then(function(data) {
-                    var media = document.getElementById('flounder-media');
-                    if (data.playing) {
-                        var gameId = data.playing.split('/').pop();
-                        if (gameId !== flounderGameId) {
-                            flounderGameId = gameId;
-                            media.innerHTML = '<iframe src="https://lichess.org/embed/game/' + gameId + '?theme=brown&bg=light" class="project-image" frameborder="0"></iframe>';
-                        }
-                    } else if (flounderGameId !== null) {
-                        flounderGameId = null;
-                        media.innerHTML = '<video src="images/flounder.mp4" class="project-image" autoplay loop muted playsinline></video>';
-                    }
-                })
-                .catch(function() {});
-        }
-        checkFlounderLive();
-        setInterval(checkFlounderLive, 30000);
     </script>
 </body>
 </html>
