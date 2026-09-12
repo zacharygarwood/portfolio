@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Zachary Garwood, Software Engineer" />
+    <meta name="author" content="Zachary Garwood" />
+    <meta name="description" content="Software Engineer" />
+    <meta name="robots" content="follow, index" />
+
+    <!-- Header info -->
+    <link rel="canonical" href="https://zacharygarwood.com/projects.html" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="./styles.css" rel="stylesheet">
+    <title>Zachary Garwood</title>
+
+    <!-- Google tag (gtag.js) - fetched after load so it never delays navigation -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W75STFN6ST');
+
+        window.addEventListener('load', function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W75STFN6ST';
+            document.head.appendChild(s);
+        });
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js');
+                var c = navigator.connection || {};
+                var slow = c.saveData || /2g/.test(c.effectiveType || '');
+                if (!slow) {
+                    setTimeout(function () {
+                        navigator.serviceWorker.ready.then(function (reg) {
+                            if (reg.active) reg.active.postMessage({ type: 'warm', dpr: window.devicePixelRatio || 1 });
+                        });
+                    }, 2500);
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="/" class="header">
+            <h4>Zachary Garwood</h4>
+        </a>
+        <nav>
+            <a href="/">about</a>
+            <a class="active" href="/projects.html">projects</a>
+            <a href="/misc.html">misc</a>
+        </nav>
+        <div class="projects-grid">
+            <a href="https://sightlines.dev" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <img src="images/sightlines.webp" alt="Sightlines" class="project-image" width="400" height="400" decoding="async" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-card-title">Sightlines</div>
+                        <p class="project-description">Daily chess game</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://quietfold.com" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <img src="images/quietfold.webp" alt="Quietfold" class="project-image" width="400" height="400" decoding="async" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-card-title">Quietfold</div>
+                        <p class="project-description">RSS feed generator</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/zacharygarwood/Flounder" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <video class="project-image" data-src="images/flounder.mp4" poster="images/flounder-poster.webp" preload="none" loop muted playsinline></video>
+                    <div class="project-overlay">
+                        <div class="project-card-title">Flounder</div>
+                        <p class="project-description">2000-rated UCI compatible chess engine</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/zacharygarwood/garboy" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <video class="project-image" data-src="images/pokemon.mp4" poster="images/pokemon-poster.webp" preload="none" loop muted playsinline></video>
+                    <div class="project-overlay">
+                        <div class="project-card-title">Garboy</div>
+                        <p class="project-description">Gameboy Emulator</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/zacharygarwood/minecraft-as-file-storage" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <video class="project-image" data-src="images/mafs.mp4" poster="images/mafs-poster.webp" preload="none" loop muted playsinline></video>
+                    <div class="project-overlay">
+                        <div class="project-card-title">mafs</div>
+                        <p class="project-description">Minecraft as file storage</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/zacharygarwood/edge-detection" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <video class="project-image" data-src="images/edge-detection.mp4" poster="images/edge-detection-poster.webp" preload="none" loop muted playsinline></video>
+                    <div class="project-overlay">
+                        <div class="project-card-title">Edge Detection</div>
+                        <p class="project-description">Computer vision edge detection</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://prod.computer" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <video class="project-image" data-src="images/prod-hamster.mp4" poster="images/prod-hamster-poster.webp" preload="none" loop muted playsinline></video>
+                    <div class="project-overlay">
+                        <div class="project-card-title">prod.computer</div>
+                        <p class="project-description">Running the internet</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/zacharygarwood/autoclip" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <img src="images/autoclip.webp" alt="Autoclip" class="project-image" width="400" height="400" decoding="async" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-card-title">Autoclip</div>
+                        <p class="project-description">Automatically posts the top Twitch clips to YouTube</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/zacharygarwood/valorant-scraper" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <img src="images/pairplot.webp" alt="Valorant Scraper" class="project-image" width="400" height="400" decoding="async" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-card-title">Valorant Scraper</div>
+                        <p class="project-description">Player statistics scraper</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/zacharygarwood/decoy" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <img src="images/diagram.webp" alt="Decoy" class="project-image" width="400" height="400" decoding="async" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-card-title">Decoy</div>
+                        <p class="project-description">Password management system</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script>
+        // first tap reveals the overlay on touch devices, second tap opens the link
+        document.querySelectorAll('.project-card').forEach(function (card) {
+            card.addEventListener('click', function (e) {
+                if (window.matchMedia('(hover: none)').matches && !this.classList.contains('tapped')) {
+                    e.preventDefault();
+                    this.classList.add('tapped');
+                }
+            });
+        });
+
+        // videos hold at their poster until the tile is near the viewport
+        (function () {
+            var vids = [].slice.call(document.querySelectorAll('video[data-src]'));
+            function load(v) {
+                if (v.src) return;
+                v.src = v.dataset.src;
+                v.play().catch(function () {});
+            }
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (!entry.isIntersecting) return;
+                        io.unobserve(entry.target);
+                        load(entry.target);
+                    });
+                }, { rootMargin: '300px' });
+                vids.forEach(function (v) { io.observe(v); });
+            } else {
+                vids.forEach(load);
+            }
+        })();
+    </script>
+</body>
+</html>
