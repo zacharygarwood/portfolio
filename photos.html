@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Zachary Garwood, Software Engineer" />
+    <meta name="author" content="Zachary Garwood" />
+    <meta name="description" content="Software Engineer" />
+    <meta name="robots" content="follow, index" />
+
+    <!-- Header info -->
+    <link rel="canonical" href="https://zacharygarwood.com/photos.html" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="./styles.css" rel="stylesheet">
+    <title>Zachary Garwood</title>
+
+    <!-- Google tag (gtag.js) - fetched after load so it never delays navigation -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W75STFN6ST');
+
+        window.addEventListener('load', function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W75STFN6ST';
+            document.head.appendChild(s);
+        });
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js');
+                var c = navigator.connection || {};
+                var slow = c.saveData || /2g/.test(c.effectiveType || '');
+                if (!slow) {
+                    setTimeout(function () {
+                        navigator.serviceWorker.ready.then(function (reg) {
+                            if (reg.active) reg.active.postMessage({ type: 'warm', dpr: window.devicePixelRatio || 1 });
+                        });
+                    }, 2500);
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="/" class="header">
+            <h4>Zachary Garwood</h4>
+        </a>
+        <nav>
+            <a href="/">about</a>
+            <a href="/projects.html">projects</a>
+            <a class="active" href="/misc.html">misc</a>
+        </nav>
+        <div class="photos">
+            <img src="images/photos/rose-window-bw.webp"
+                 srcset="images/photos/rose-window-bw-800.webp 800w, images/photos/rose-window-bw.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Rose window" width="1200" height="1594" decoding="async" fetchpriority="high">
+            <img src="images/photos/old-buildings.webp"
+                 srcset="images/photos/old-buildings-800.webp 800w, images/photos/old-buildings.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Old buildings" width="1200" height="1612" decoding="async" loading="lazy">
+            <img src="images/photos/church-steeple.webp"
+                 srcset="images/photos/church-steeple-800.webp 800w, images/photos/church-steeple.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Church steeple" width="1200" height="1594" decoding="async" loading="lazy">
+            <img src="images/photos/waterfall.webp"
+                 srcset="images/photos/waterfall-800.webp 800w, images/photos/waterfall.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Waterfall" width="1200" height="1600" decoding="async" loading="lazy">
+            <img src="images/photos/aerial-bw.webp"
+                 srcset="images/photos/aerial-bw-800.webp 800w, images/photos/aerial-bw.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="New York from above" width="1200" height="1756" decoding="async" loading="lazy">
+            <img src="images/photos/high-rise-bw.webp"
+                 srcset="images/photos/high-rise-bw-800.webp 800w, images/photos/high-rise-bw.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="High rise" width="1200" height="2069" decoding="async" loading="lazy">
+            <img src="images/photos/dome-oculus.webp"
+                 srcset="images/photos/dome-oculus-800.webp 800w, images/photos/dome-oculus.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Domed ceiling and oculus" width="1200" height="1056" decoding="async" loading="lazy">
+            <img src="images/photos/cloud-gate.webp"
+                 srcset="images/photos/cloud-gate-800.webp 800w, images/photos/cloud-gate.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Cloud Gate" width="1200" height="1183" decoding="async" loading="lazy">
+            <img src="images/photos/basilica-at-night.webp"
+                 srcset="images/photos/basilica-at-night-800.webp 800w, images/photos/basilica-at-night.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Basilica at night" width="1200" height="1594" decoding="async" loading="lazy">
+            <img src="images/photos/graffiti-mural.webp"
+                 srcset="images/photos/graffiti-mural-800.webp 800w, images/photos/graffiti-mural.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Graffiti mural" width="1200" height="875" decoding="async" loading="lazy">
+            <img src="images/photos/bronze-doors.webp"
+                 srcset="images/photos/bronze-doors-800.webp 800w, images/photos/bronze-doors.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Bronze doors" width="1200" height="1118" decoding="async" loading="lazy">
+            <img src="images/photos/coastal-arch.webp"
+                 srcset="images/photos/coastal-arch-800.webp 800w, images/photos/coastal-arch.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Coastal arch" width="1200" height="675" decoding="async" loading="lazy">
+            <img src="images/photos/manhattan-aerial.webp"
+                 srcset="images/photos/manhattan-aerial-800.webp 800w, images/photos/manhattan-aerial.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Manhattan from above" width="1200" height="1594" decoding="async" loading="lazy">
+            <img src="images/photos/hotel-at-night.webp"
+                 srcset="images/photos/hotel-at-night-800.webp 800w, images/photos/hotel-at-night.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Hotel at night" width="1200" height="1594" decoding="async" loading="lazy">
+            <img src="images/photos/city-buildings.webp"
+                 srcset="images/photos/city-buildings-800.webp 800w, images/photos/city-buildings.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="City buildings" width="1200" height="1594" decoding="async" loading="lazy">
+            <img src="images/photos/arret-sign.webp"
+                 srcset="images/photos/arret-sign-800.webp 800w, images/photos/arret-sign.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Arret sign" width="1200" height="1594" decoding="async" loading="lazy">
+            <img src="images/photos/stone-tower.webp"
+                 srcset="images/photos/stone-tower-800.webp 800w, images/photos/stone-tower.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Stone tower" width="1200" height="675" decoding="async" loading="lazy">
+            <img src="images/photos/lake.webp"
+                 srcset="images/photos/lake-800.webp 800w, images/photos/lake.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Lake" width="1200" height="503" decoding="async" loading="lazy">
+            <img src="images/photos/farm-fields.webp"
+                 srcset="images/photos/farm-fields-800.webp 800w, images/photos/farm-fields.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Farm fields" width="1200" height="499" decoding="async" loading="lazy">
+            <img src="images/photos/river-dusk.webp"
+                 srcset="images/photos/river-dusk-800.webp 800w, images/photos/river-dusk.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="River at dusk" width="1200" height="583" decoding="async" loading="lazy">
+            <img src="images/photos/prairie-sunset.webp"
+                 srcset="images/photos/prairie-sunset-800.webp 800w, images/photos/prairie-sunset.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Prairie sunset" width="1200" height="527" decoding="async" loading="lazy">
+            <img src="images/photos/stone-facade.webp"
+                 srcset="images/photos/stone-facade-800.webp 800w, images/photos/stone-facade.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Stone facade" width="1200" height="904" decoding="async" loading="lazy">
+            <img src="images/photos/park-bench.webp"
+                 srcset="images/photos/park-bench-800.webp 800w, images/photos/park-bench.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Park bench" width="1200" height="1594" decoding="async" loading="lazy">
+            <img src="images/photos/canal-bridge.webp"
+                 srcset="images/photos/canal-bridge-800.webp 800w, images/photos/canal-bridge.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Canal bridge" width="1200" height="904" decoding="async" loading="lazy">
+            <img src="images/photos/hillside-bw.webp"
+                 srcset="images/photos/hillside-bw-800.webp 800w, images/photos/hillside-bw.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Hillside" width="1200" height="2133" decoding="async" loading="lazy">
+            <img src="images/photos/foggy-ridge.webp"
+                 srcset="images/photos/foggy-ridge-800.webp 800w, images/photos/foggy-ridge.webp 1200w"
+                 sizes="(max-width: 582px) calc(100vw - 2rem), 550px"
+                 alt="Foggy ridge" width="1200" height="1360" decoding="async" loading="lazy">
+        </div>
+    </div>
+</body>
+</html>
