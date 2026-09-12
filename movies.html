@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Zachary Garwood, Software Engineer" />
+    <meta name="author" content="Zachary Garwood" />
+    <meta name="description" content="Software Engineer" />
+    <meta name="robots" content="follow, index" />
+
+    <!-- Header info -->
+    <link rel="canonical" href="https://zacharygarwood.com/movies.html" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="./styles.css" rel="stylesheet">
+    <title>Zachary Garwood</title>
+
+    <!-- Google tag (gtag.js) - fetched after load so it never delays navigation -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W75STFN6ST');
+
+        window.addEventListener('load', function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W75STFN6ST';
+            document.head.appendChild(s);
+        });
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js');
+                var c = navigator.connection || {};
+                var slow = c.saveData || /2g/.test(c.effectiveType || '');
+                if (!slow) {
+                    setTimeout(function () {
+                        navigator.serviceWorker.ready.then(function (reg) {
+                            if (reg.active) reg.active.postMessage({ type: 'warm', dpr: window.devicePixelRatio || 1 });
+                        });
+                    }, 2500);
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="/" class="header">
+            <h4>Zachary Garwood</h4>
+        </a>
+        <nav>
+            <a href="/">about</a>
+            <a href="/projects.html">projects</a>
+            <a class="active" href="/misc.html">misc</a>
+        </nav>
+        <div class="cover-grid">
+            <div class="cover">
+                <img src="images/movies/the-grand-budapest-hotel.webp" alt="The Grand Budapest Hotel &mdash; 10 out of 10" title="The Grand Budapest Hotel &mdash; 10 out of 10" width="500" height="750" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">10/10</span>
+                    <span class="cover-title">The Grand Budapest Hotel</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/movies/whiplash.webp" alt="Whiplash &mdash; 10 out of 10" title="Whiplash &mdash; 10 out of 10" width="500" height="750" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">10/10</span>
+                    <span class="cover-title">Whiplash</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/movies/the-lighthouse.webp" alt="The Lighthouse &mdash; 9 out of 10" title="The Lighthouse &mdash; 9 out of 10" width="500" height="741" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">9/10</span>
+                    <span class="cover-title">The Lighthouse</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/movies/kill-bill.webp" alt="Kill Bill &mdash; 9 out of 10" title="Kill Bill &mdash; 9 out of 10" width="500" height="686" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">9/10</span>
+                    <span class="cover-title">Kill Bill</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/movies/fantastic-mr-fox.webp" alt="Fantastic Mr. Fox &mdash; 9 out of 10" title="Fantastic Mr. Fox &mdash; 9 out of 10" width="500" height="750" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">9/10</span>
+                    <span class="cover-title">Fantastic Mr. Fox</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/movies/reservoir-dogs.webp" alt="Reservoir Dogs &mdash; 8 out of 10" title="Reservoir Dogs &mdash; 8 out of 10" width="500" height="745" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">8/10</span>
+                    <span class="cover-title">Reservoir Dogs</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/movies/bugonia.webp" alt="Bugonia &mdash; 8 out of 10" title="Bugonia &mdash; 8 out of 10" width="500" height="707" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">8/10</span>
+                    <span class="cover-title">Bugonia</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/movies/the-odyssey.webp" alt="The Odyssey &mdash; 8 out of 10" title="The Odyssey &mdash; 8 out of 10" width="500" height="707" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">8/10</span>
+                    <span class="cover-title">The Odyssey</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/movies/the-invite.webp" alt="The Invite &mdash; 8 out of 10" title="The Invite &mdash; 8 out of 10" width="500" height="750" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">8/10</span>
+                    <span class="cover-title">The Invite</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/movies/the-naked-gun.webp" alt="The Naked Gun &mdash; 7 out of 10" title="The Naked Gun &mdash; 7 out of 10" width="400" height="600" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">7/10</span>
+                    <span class="cover-title">The Naked Gun</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/movies/the-godfather.webp" alt="The Godfather &mdash; 7 out of 10" title="The Godfather &mdash; 7 out of 10" width="500" height="750" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">7/10</span>
+                    <span class="cover-title">The Godfather</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/movies/the-backrooms.webp" alt="The Backrooms &mdash; 7 out of 10" title="The Backrooms &mdash; 7 out of 10" width="500" height="700" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">7/10</span>
+                    <span class="cover-title">The Backrooms</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/movies/mickey-17.webp" alt="Mickey 17 &mdash; 3 out of 10" title="Mickey 17 &mdash; 3 out of 10" width="500" height="750" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">3/10</span>
+                    <span class="cover-title">Mickey 17</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.cover').forEach(function (cover) {
+            cover.addEventListener('click', function () {
+                if (window.matchMedia('(hover: none)').matches) {
+                    this.classList.toggle('tapped');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

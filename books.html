@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Zachary Garwood, Software Engineer" />
+    <meta name="author" content="Zachary Garwood" />
+    <meta name="description" content="Software Engineer" />
+    <meta name="robots" content="follow, index" />
+
+    <!-- Header info -->
+    <link rel="canonical" href="https://zacharygarwood.com/books.html" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="./styles.css" rel="stylesheet">
+    <title>Zachary Garwood</title>
+
+    <!-- Google tag (gtag.js) - fetched after load so it never delays navigation -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W75STFN6ST');
+
+        window.addEventListener('load', function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W75STFN6ST';
+            document.head.appendChild(s);
+        });
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js');
+                var c = navigator.connection || {};
+                var slow = c.saveData || /2g/.test(c.effectiveType || '');
+                if (!slow) {
+                    setTimeout(function () {
+                        navigator.serviceWorker.ready.then(function (reg) {
+                            if (reg.active) reg.active.postMessage({ type: 'warm', dpr: window.devicePixelRatio || 1 });
+                        });
+                    }, 2500);
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="/" class="header">
+            <h4>Zachary Garwood</h4>
+        </a>
+        <nav>
+            <a href="/">about</a>
+            <a href="/projects.html">projects</a>
+            <a class="active" href="/misc.html">misc</a>
+        </nav>
+        <div class="cover-grid">
+            <div class="cover">
+                <img src="images/books/the-will-of-the-many.webp" alt="The Will of the Many &mdash; 10 out of 10" title="The Will of the Many &mdash; 10 out of 10" width="500" height="749" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">10/10</span>
+                    <span class="cover-title">The Will of the Many</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/books/1984.webp" alt="1984 &mdash; 9 out of 10" title="1984 &mdash; 9 out of 10" width="498" height="750" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">9/10</span>
+                    <span class="cover-title">1984</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/books/the-strength-of-the-few.webp" alt="The Strength of the Few &mdash; 8 out of 10" title="The Strength of the Few &mdash; 8 out of 10" width="499" height="750" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">8/10</span>
+                    <span class="cover-title">The Strength of the Few</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/books/abundance.webp" alt="Abundance &mdash; 6 out of 10" title="Abundance &mdash; 6 out of 10" width="331" height="500" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">6/10</span>
+                    <span class="cover-title">Abundance</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/books/mickey-7.webp" alt="Mickey7 &mdash; 6 out of 10" title="Mickey7 &mdash; 6 out of 10" width="493" height="750" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">6/10</span>
+                    <span class="cover-title">Mickey7</span>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="images/books/a-short-history-of-nearly-everything.webp" alt="A Short History of Nearly Everything &mdash; 5 out of 10" title="A Short History of Nearly Everything &mdash; 5 out of 10" width="470" height="750" decoding="async" loading="lazy">
+                <div class="cover-rating">
+                    <span class="cover-score">5/10</span>
+                    <span class="cover-title">A Short History of Nearly Everything</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.cover').forEach(function (cover) {
+            cover.addEventListener('click', function () {
+                if (window.matchMedia('(hover: none)').matches) {
+                    this.classList.toggle('tapped');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
