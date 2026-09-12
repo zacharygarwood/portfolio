@@ -56,6 +56,23 @@ a:hover {
     color: var(--text-color)
 }
 
+/* company links pick up their own brand colour on hover */
+a[href*="dropbox.com"]:hover {
+    color: #0061FE;
+}
+
+a[href*="amazon.com"]:hover {
+    color: #C45500;
+}
+
+a[href*="principal.com"]:hover {
+    color: #0076CF;
+}
+
+a[href*="iastate.edu"]:hover {
+    color: #C8102E;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
