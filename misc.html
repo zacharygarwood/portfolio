@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Zachary Garwood, Software Engineer" />
+    <meta name="author" content="Zachary Garwood" />
+    <meta name="description" content="Software Engineer" />
+    <meta name="robots" content="follow, index" />
+
+    <!-- Header info -->
+    <link rel="canonical" href="https://zacharygarwood.com/misc.html" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="images/kirby.webp" as="image">
+    <link rel="preload" href="images/explosion.webp" as="image">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Zachary Garwood</title>
+
+    <!-- Google tag (gtag.js) - fetched after load so it never delays navigation -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W75STFN6ST');
+
+        window.addEventListener('load', function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W75STFN6ST';
+            document.head.appendChild(s);
+        });
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js');
+                var c = navigator.connection || {};
+                var slow = c.saveData || /2g/.test(c.effectiveType || '');
+                if (!slow) {
+                    setTimeout(function () {
+                        navigator.serviceWorker.ready.then(function (reg) {
+                            if (reg.active) reg.active.postMessage({ type: 'warm', dpr: window.devicePixelRatio || 1 });
+                        });
+                    }, 2500);
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h4 class="header-line">
+            <a href="/" class="header">Zachary Garwood</a>
+            <span class="kirby" id="kirby" role="button" tabindex="0" aria-label="Bomb Kirby">
+                <img class="kirby-sprite" src="images/kirby.webp" alt="Bomb Kirby" width="20" height="20" fetchpriority="high">
+                <span class="kirby-boom" aria-hidden="true"></span>
+            </span>
+        </h4>
+        <nav>
+            <a href="/">about</a>
+            <a href="/projects.html">projects</a>
+            <a class="active" href="/misc.html">misc</a>
+        </nav>
+        <ul class="index">
+            <li><a href="/photos.html">Photos <span class="index-arrow">&rarr;</span></a></li>
+            <li><a href="/movies.html">Movies <span class="index-arrow">&rarr;</span></a></li>
+            <li><a href="/books.html">Books <span class="index-arrow">&rarr;</span></a></li>
+        </ul>
+    </div>
+    <script>
+        (function () {
+            var k = document.getElementById('kirby');
+            var blast = k.querySelector('.kirby-boom');
+            function boom() {
+                if (k.classList.contains('boom')) return;
+                k.classList.add('boom');
+            }
+            // when the sprite animation ends he is gone for good; no timers, no
+            // network fetch, so it plays identically every single time
+            blast.addEventListener('animationend', function () {
+                k.classList.add('spent');
+            });
+            k.addEventListener('click', boom);
+            k.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); boom(); }
+            });
+        })();
+    </script>
+</body>
+</html>
