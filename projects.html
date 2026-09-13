@@ -152,13 +152,14 @@
         </div>
     </div>
     <script>
-        // first tap reveals the overlay on touch devices, second tap opens the link
+        // touch devices: a tap toggles the overlay; the "open" line inside it follows the link
         document.querySelectorAll('.project-card').forEach(function (card) {
+            card.querySelector('.project-overlay').insertAdjacentHTML('beforeend', '<span class="project-open">Open &nearr;</span>');
             card.addEventListener('click', function (e) {
-                if (window.matchMedia('(hover: none)').matches && !this.classList.contains('tapped')) {
-                    e.preventDefault();
-                    this.classList.add('tapped');
-                }
+                if (!window.matchMedia('(hover: none)').matches) return;
+                if (this.classList.contains('tapped') && e.target.closest('.project-open')) return;
+                e.preventDefault();
+                this.classList.toggle('tapped');
             });
         });
 

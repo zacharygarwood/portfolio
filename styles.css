@@ -73,6 +73,14 @@ a[href*="iastate.edu"]:hover {
     color: #C8102E;
 }
 
+a[href*="github.com"]:hover {
+    color: #8250DF;
+}
+
+a[href*="linkedin.com"]:hover {
+    color: #0A66C2;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -95,11 +103,6 @@ a[href*="iastate.edu"]:hover {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
-    transition: transform 0.4s ease;
-}
-
-.project-card:hover .project-image {
-    transform: scale(1.04);
 }
 
 .project-overlay {
@@ -117,8 +120,11 @@ a[href*="iastate.edu"]:hover {
     transition: opacity 0.2s ease;
 }
 
-.project-card:hover .project-overlay {
-    opacity: 1;
+/* touch screens keep :hover stuck on the last tapped tile, so they use .tapped instead */
+@media (hover: hover) {
+    .project-card:hover .project-overlay {
+        opacity: 1;
+    }
 }
 
 .project-card-title {
@@ -131,6 +137,10 @@ a[href*="iastate.edu"]:hover {
     margin: 0.25rem 0 0;
     font-size: 0.8rem;
     color: rgba(247, 246, 246, 0.8);
+}
+
+.project-open {
+    display: none;
 }
 
 .project-aside {
@@ -286,8 +296,10 @@ a[href*="iastate.edu"]:hover {
     color: #F7F6F6;
 }
 
-.cover:hover .cover-rating {
-    opacity: 1;
+@media (hover: hover) {
+    .cover:hover .cover-rating {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 480px) {
@@ -300,6 +312,14 @@ a[href*="iastate.edu"]:hover {
     .cover.tapped .cover-rating,
     .project-card.tapped .project-overlay {
         opacity: 1;
+    }
+
+    .project-open {
+        display: inline-block;
+        margin-top: 0.5rem;
+        padding: 0.35rem 0.75rem;
+        font-size: 0.8rem;
+        text-decoration: underline;
     }
 }
 
