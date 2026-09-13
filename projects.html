@@ -59,6 +59,15 @@
             <a href="/misc.html">misc</a>
         </nav>
         <div class="projects-grid">
+            <a href="https://github.com/zacharygarwood/movt4/tree/main" class="project-card" target="_blank">
+                <div class="project-image-wrapper">
+                    <img src="images/movt4.webp" alt="movt4" class="project-image" width="400" height="400" decoding="async" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-card-title">movt4</div>
+                        <p class="project-description">Find Letterboxd members who share your Top 4</p>
+                    </div>
+                </div>
+            </a>
             <a href="https://sightlines.dev" class="project-card" target="_blank">
                 <div class="project-image-wrapper">
                     <img src="images/sightlines.webp" alt="Sightlines" class="project-image" width="400" height="400" decoding="async" loading="lazy">
@@ -154,7 +163,7 @@
     <script>
         // touch devices: a tap toggles the overlay; the "open" line inside it follows the link
         document.querySelectorAll('.project-card').forEach(function (card) {
-            card.querySelector('.project-overlay').insertAdjacentHTML('beforeend', '<span class="project-open">Open &nearr;</span>');
+            card.querySelector('.project-overlay').insertAdjacentHTML('beforeend', '<span class="project-open">Open <span class="project-open-arrow">&rarr;</span></span>');
             card.addEventListener('click', function (e) {
                 if (!window.matchMedia('(hover: none)').matches) return;
                 if (this.classList.contains('tapped') && e.target.closest('.project-open')) return;

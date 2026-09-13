@@ -217,7 +217,7 @@ a[href*="linkedin.com"]:hover {
 }
 
 .index li {
-    margin-bottom: 0.6rem;
+    margin-bottom: 1rem;
 }
 
 .index a {
@@ -296,6 +296,12 @@ a[href*="linkedin.com"]:hover {
     color: #F7F6F6;
 }
 
+.cover-grid .cover-cameo {
+    width: 64px;
+    aspect-ratio: 16 / 9;
+    margin-top: 0.3rem;
+}
+
 @media (hover: hover) {
     .cover:hover .cover-rating {
         opacity: 1;
@@ -319,7 +325,17 @@ a[href*="linkedin.com"]:hover {
         margin-top: 0.5rem;
         padding: 0.35rem 0.75rem;
         font-size: 0.8rem;
-        text-decoration: underline;
+    }
+
+    .project-open-arrow {
+        display: inline-block;
+        color: rgba(247, 246, 246, 0.7);
+        transition: transform 0.15s ease, color 0.15s ease;
+    }
+
+    .project-open:active .project-open-arrow {
+        color: #F7F6F6;
+        transform: translateX(3px);
     }
 }
 
