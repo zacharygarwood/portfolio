@@ -660,7 +660,7 @@ main {
 @media (width <= 640px) {
     .hero {
         justify-content: flex-start;
-        padding: 4rem 1.5rem 1.5rem;
+        padding: 8rem 1.5rem 1.5rem;
     }
 
     .summary {
