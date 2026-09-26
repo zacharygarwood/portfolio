@@ -13,6 +13,8 @@
     <!-- Header info -->
     <link rel="canonical" href="https://zacharygarwood.com/books.html" />
     <link rel="icon" href="images/favicon.ico">
+    <link rel="preload" href="fonts/Poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Lora-Variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
     <link href="./styles.css" rel="stylesheet">
     <title>Zachary Garwood</title>
@@ -49,60 +51,72 @@
 </head>
 
 <body>
-    <div class="container">
-        <a href="/" class="header">
-            <h4>Zachary Garwood</h4>
-        </a>
-        <nav>
-            <a href="/">about</a>
-            <a href="/projects.html">projects</a>
-            <a class="active" href="/misc.html">misc</a>
-        </nav>
-        <div class="cover-grid">
-            <div class="cover">
-                <img src="images/books/the-will-of-the-many.webp" alt="The Will of the Many &mdash; 10 out of 10" title="The Will of the Many &mdash; 10 out of 10" width="500" height="749" decoding="async" loading="lazy">
-                <div class="cover-rating">
-                    <span class="cover-score">10/10</span>
-                    <span class="cover-title">The Will of the Many</span>
+    <main>
+        <div class="page">
+            <header class="page-heading"><h1>books</h1></header>
+            <div class="cover-grid">
+                <div class="cover">
+                    <img src="images/books/the-will-of-the-many.webp" alt="The Will of the Many &mdash; 10 out of 10" title="The Will of the Many &mdash; 10 out of 10" width="500" height="749" decoding="async" loading="lazy">
+                    <div class="cover-rating">
+                        <span class="cover-score">10/10</span>
+                        <span class="cover-title">The Will of the Many</span>
+                    </div>
+                </div>
+                <div class="cover">
+                    <img src="images/books/1984.webp" alt="1984 &mdash; 9 out of 10" title="1984 &mdash; 9 out of 10" width="498" height="750" decoding="async" loading="lazy">
+                    <div class="cover-rating">
+                        <span class="cover-score">9/10</span>
+                        <span class="cover-title">1984</span>
+                    </div>
+                </div>
+                <div class="cover">
+                    <img src="images/books/the-strength-of-the-few.webp" alt="The Strength of the Few &mdash; 8 out of 10" title="The Strength of the Few &mdash; 8 out of 10" width="499" height="750" decoding="async" loading="lazy">
+                    <div class="cover-rating">
+                        <span class="cover-score">8/10</span>
+                        <span class="cover-title">The Strength of the Few</span>
+                    </div>
+                </div>
+                <div class="cover">
+                    <img src="images/books/abundance.webp" alt="Abundance &mdash; 6 out of 10" title="Abundance &mdash; 6 out of 10" width="331" height="500" decoding="async" loading="lazy">
+                    <div class="cover-rating">
+                        <span class="cover-score">6/10</span>
+                        <span class="cover-title">Abundance</span>
+                    </div>
+                </div>
+                <div class="cover">
+                    <img src="images/books/mickey-7.webp" alt="Mickey7 &mdash; 6 out of 10" title="Mickey7 &mdash; 6 out of 10" width="493" height="750" decoding="async" loading="lazy">
+                    <div class="cover-rating">
+                        <span class="cover-score">6/10</span>
+                        <span class="cover-title">Mickey7</span>
+                    </div>
+                </div>
+                <div class="cover">
+                    <img src="images/books/a-short-history-of-nearly-everything.webp" alt="A Short History of Nearly Everything &mdash; 5 out of 10" title="A Short History of Nearly Everything &mdash; 5 out of 10" width="470" height="750" decoding="async" loading="lazy">
+                    <div class="cover-rating">
+                        <span class="cover-score">5/10</span>
+                        <span class="cover-title">A Short History of Nearly Everything</span>
+                    </div>
                 </div>
             </div>
-            <div class="cover">
-                <img src="images/books/1984.webp" alt="1984 &mdash; 9 out of 10" title="1984 &mdash; 9 out of 10" width="498" height="750" decoding="async" loading="lazy">
-                <div class="cover-rating">
-                    <span class="cover-score">9/10</span>
-                    <span class="cover-title">1984</span>
-                </div>
-            </div>
-            <div class="cover">
-                <img src="images/books/the-strength-of-the-few.webp" alt="The Strength of the Few &mdash; 8 out of 10" title="The Strength of the Few &mdash; 8 out of 10" width="499" height="750" decoding="async" loading="lazy">
-                <div class="cover-rating">
-                    <span class="cover-score">8/10</span>
-                    <span class="cover-title">The Strength of the Few</span>
-                </div>
-            </div>
-            <div class="cover">
-                <img src="images/books/abundance.webp" alt="Abundance &mdash; 6 out of 10" title="Abundance &mdash; 6 out of 10" width="331" height="500" decoding="async" loading="lazy">
-                <div class="cover-rating">
-                    <span class="cover-score">6/10</span>
-                    <span class="cover-title">Abundance</span>
-                </div>
-            </div>
-            <div class="cover">
-                <img src="images/books/mickey-7.webp" alt="Mickey7 &mdash; 6 out of 10" title="Mickey7 &mdash; 6 out of 10" width="493" height="750" decoding="async" loading="lazy">
-                <div class="cover-rating">
-                    <span class="cover-score">6/10</span>
-                    <span class="cover-title">Mickey7</span>
-                </div>
-            </div>
-            <div class="cover">
-                <img src="images/books/a-short-history-of-nearly-everything.webp" alt="A Short History of Nearly Everything &mdash; 5 out of 10" title="A Short History of Nearly Everything &mdash; 5 out of 10" width="470" height="750" decoding="async" loading="lazy">
-                <div class="cover-rating">
-                    <span class="cover-score">5/10</span>
-                    <span class="cover-title">A Short History of Nearly Everything</span>
-                </div>
-            </div>
+            <footer class="page-footer">
+                <span class="header-line">
+                    <a href="/">zachary garwood</a>
+                    <span class="kirby" id="kirby" role="button" tabindex="0" aria-label="Bomb Kirby">
+                        <img class="kirby-sprite" src="images/kirby.webp" alt="Bomb Kirby" width="20" height="20">
+                        <span class="kirby-boom" aria-hidden="true"></span>
+                    </span>
+                </span>
+                <nav aria-label="Footer navigation">
+                    <a href="/projects.html">projects</a>
+                    <a href="/photos.html">photos</a>
+                    <a href="/movies.html">movies</a>
+                    <a class="active" href="/books.html" aria-current="page">books</a>
+                </nav>
+            </footer>
         </div>
-    </div>
+    </main>
+    <script src="/gameboy.js"></script>
+    <script src="/kirby.js"></script>
     <script>
         document.querySelectorAll('.cover').forEach(function (cover) {
             cover.addEventListener('click', function () {

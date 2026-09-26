@@ -13,7 +13,8 @@
     <!-- Header info -->
     <link rel="canonical" href="https://zacharygarwood.com/projects.html" />
     <link rel="icon" href="images/favicon.ico">
-    <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Lora-Variable.woff2" as="font" type="font/woff2" crossorigin>
     <link href="./styles.css" rel="stylesheet">
     <title>Zachary Garwood</title>
 
@@ -49,129 +50,145 @@
 </head>
 
 <body>
-    <div class="container">
-        <a href="/" class="header">
-            <h4>Zachary Garwood</h4>
-        </a>
-        <nav>
-            <a href="/">about</a>
-            <a class="active" href="/projects.html">projects</a>
-            <a href="/misc.html">misc</a>
-        </nav>
-        <div class="projects-grid">
-            <a href="https://github.com/zacharygarwood/movt4/tree/main" class="project-card" target="_blank">
-                <div class="project-image-wrapper">
-                    <img src="images/movt4.webp" alt="movt4" class="project-image" width="400" height="400" decoding="async" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-card-title">movt4</div>
-                        <p class="project-description">Find Letterboxd members who share your Top 4</p>
+    <main>
+        <div class="page">
+            <header class="page-heading"><h1>projects</h1></header>
+            <ol class="release-list">
+                <li class="release-row">
+                    <a href="https://github.com/zacharygarwood/movt4/tree/main" class="release-project" target="_blank" rel="noreferrer">
+                        <span class="release-image"><span class="dither-image"><img src="images/movt4.webp" alt="movt4" width="400" height="400" decoding="async" loading="lazy"></span></span>
+                        <div class="release-copy">
+                            <div class="release-title"><h3>movt4</h3></div>
+                            <p>Find Letterboxd members who share your Top 4</p>
+                        </div>
+                    </a>
+                    <div class="release-meta"><a href="https://github.com/zacharygarwood/movt4/tree/main" target="_blank" rel="noreferrer" aria-label="movt4 github (opens in a new tab)">github <span aria-hidden="true">&#8599;</span></a></div>
+                </li>
+                <li class="release-row">
+                    <a href="https://sightlines.dev" class="release-project" target="_blank" rel="noreferrer">
+                        <span class="release-image"><span class="dither-image"><img src="images/sightlines.webp" alt="Sightlines" width="400" height="400" decoding="async" loading="lazy"></span></span>
+                        <div class="release-copy">
+                            <div class="release-title"><h3>Sightlines</h3></div>
+                            <p>Daily chess game</p>
+                        </div>
+                    </a>
+                    <div class="release-meta"><a href="https://sightlines.dev" target="_blank" rel="noreferrer" aria-label="Sightlines site (opens in a new tab)">site <span aria-hidden="true">&#8599;</span></a></div>
+                </li>
+                <li class="release-row">
+                    <a href="https://quietfold.com" class="release-project" target="_blank" rel="noreferrer">
+                        <span class="release-image"><span class="dither-image"><img src="images/quietfold.webp" alt="Quietfold" width="400" height="400" decoding="async" loading="lazy"></span></span>
+                        <div class="release-copy">
+                            <div class="release-title"><h3>Quietfold</h3></div>
+                            <p>RSS feed generator</p>
+                        </div>
+                    </a>
+                    <div class="release-meta"><a href="https://quietfold.com" target="_blank" rel="noreferrer" aria-label="Quietfold site (opens in a new tab)">site <span aria-hidden="true">&#8599;</span></a></div>
+                </li>
+                <li class="release-row">
+                    <a href="https://github.com/zacharygarwood/Flounder" class="release-project" target="_blank" rel="noreferrer">
+                        <span class="release-image"><span class="dither-image"><video data-src="images/flounder.mp4" poster="images/flounder-poster.webp" preload="none" loop muted playsinline></video></span></span>
+                        <div class="release-copy">
+                            <div class="release-title"><h3>Flounder</h3></div>
+                            <p>2000-rated UCI compatible chess engine</p>
+                        </div>
+                    </a>
+                    <div class="release-meta"><a href="https://github.com/zacharygarwood/Flounder" target="_blank" rel="noreferrer" aria-label="Flounder github (opens in a new tab)">github <span aria-hidden="true">&#8599;</span></a></div>
+                </li>
+                <li class="release-row">
+                    <a href="https://github.com/zacharygarwood/garboy" class="release-project" target="_blank" rel="noreferrer">
+                        <span class="release-image"><span class="dither-image"><video data-src="images/pokemon.mp4" poster="images/pokemon-poster.webp" preload="none" loop muted playsinline></video></span></span>
+                        <div class="release-copy">
+                            <div class="release-title"><h3>Garboy</h3></div>
+                            <p>Gameboy Emulator</p>
+                        </div>
+                    </a>
+                    <div class="release-meta"><a href="https://github.com/zacharygarwood/garboy" target="_blank" rel="noreferrer" aria-label="Garboy github (opens in a new tab)">github <span aria-hidden="true">&#8599;</span></a></div>
+                </li>
+                <li class="release-row">
+                    <a href="https://github.com/zacharygarwood/minecraft-as-file-storage" class="release-project" target="_blank" rel="noreferrer">
+                        <span class="release-image"><span class="dither-image"><video data-src="images/mafs.mp4" poster="images/mafs-poster.webp" preload="none" loop muted playsinline></video></span></span>
+                        <div class="release-copy">
+                            <div class="release-title"><h3>mafs</h3></div>
+                            <p>Minecraft as file storage</p>
+                        </div>
+                    </a>
+                    <div class="release-meta"><a href="https://github.com/zacharygarwood/minecraft-as-file-storage" target="_blank" rel="noreferrer" aria-label="mafs github (opens in a new tab)">github <span aria-hidden="true">&#8599;</span></a></div>
+                </li>
+                <li class="release-row">
+                    <a href="https://github.com/zacharygarwood/edge-detection" class="release-project" target="_blank" rel="noreferrer">
+                        <span class="release-image"><span class="dither-image"><video data-src="images/edge-detection.mp4" poster="images/edge-detection-poster.webp" preload="none" loop muted playsinline></video></span></span>
+                        <div class="release-copy">
+                            <div class="release-title"><h3>Edge Detection</h3></div>
+                            <p>Computer vision edge detection</p>
+                        </div>
+                    </a>
+                    <div class="release-meta"><a href="https://github.com/zacharygarwood/edge-detection" target="_blank" rel="noreferrer" aria-label="Edge Detection github (opens in a new tab)">github <span aria-hidden="true">&#8599;</span></a></div>
+                </li>
+                <li class="release-row">
+                    <a href="https://prod.computer" class="release-project" target="_blank" rel="noreferrer">
+                        <span class="release-image"><span class="dither-image"><video data-src="images/prod-hamster.mp4" poster="images/prod-hamster-poster.webp" preload="none" loop muted playsinline></video></span></span>
+                        <div class="release-copy">
+                            <div class="release-title"><h3>prod.computer</h3></div>
+                            <p>Running the internet</p>
+                        </div>
+                    </a>
+                    <div class="release-meta">
+                        <a href="https://prod.computer" target="_blank" rel="noreferrer" aria-label="prod.computer, production (opens in a new tab)">prod <span aria-hidden="true">&#8599;</span></a>
+                        <a href="https://beta.computer" target="_blank" rel="noreferrer" aria-label="beta.computer, beta (opens in a new tab)">beta <span aria-hidden="true">&#8599;</span></a>
                     </div>
-                </div>
-            </a>
-            <a href="https://sightlines.dev" class="project-card" target="_blank">
-                <div class="project-image-wrapper">
-                    <img src="images/sightlines.webp" alt="Sightlines" class="project-image" width="400" height="400" decoding="async" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-card-title">Sightlines</div>
-                        <p class="project-description">Daily chess game</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://quietfold.com" class="project-card" target="_blank">
-                <div class="project-image-wrapper">
-                    <img src="images/quietfold.webp" alt="Quietfold" class="project-image" width="400" height="400" decoding="async" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-card-title">Quietfold</div>
-                        <p class="project-description">RSS feed generator</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/zacharygarwood/Flounder" class="project-card" target="_blank">
-                <div class="project-image-wrapper">
-                    <video class="project-image" data-src="images/flounder.mp4" poster="images/flounder-poster.webp" preload="none" loop muted playsinline></video>
-                    <div class="project-overlay">
-                        <div class="project-card-title">Flounder</div>
-                        <p class="project-description">2000-rated UCI compatible chess engine</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/zacharygarwood/garboy" class="project-card" target="_blank">
-                <div class="project-image-wrapper">
-                    <video class="project-image" data-src="images/pokemon.mp4" poster="images/pokemon-poster.webp" preload="none" loop muted playsinline></video>
-                    <div class="project-overlay">
-                        <div class="project-card-title">Garboy</div>
-                        <p class="project-description">Gameboy Emulator</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/zacharygarwood/minecraft-as-file-storage" class="project-card" target="_blank">
-                <div class="project-image-wrapper">
-                    <video class="project-image" data-src="images/mafs.mp4" poster="images/mafs-poster.webp" preload="none" loop muted playsinline></video>
-                    <div class="project-overlay">
-                        <div class="project-card-title">mafs</div>
-                        <p class="project-description">Minecraft as file storage</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/zacharygarwood/edge-detection" class="project-card" target="_blank">
-                <div class="project-image-wrapper">
-                    <video class="project-image" data-src="images/edge-detection.mp4" poster="images/edge-detection-poster.webp" preload="none" loop muted playsinline></video>
-                    <div class="project-overlay">
-                        <div class="project-card-title">Edge Detection</div>
-                        <p class="project-description">Computer vision edge detection</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://prod.computer" class="project-card" target="_blank">
-                <div class="project-image-wrapper">
-                    <video class="project-image" data-src="images/prod-hamster.mp4" poster="images/prod-hamster-poster.webp" preload="none" loop muted playsinline></video>
-                    <div class="project-overlay">
-                        <div class="project-card-title">prod.computer</div>
-                        <p class="project-description">Running the internet</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/zacharygarwood/autoclip" class="project-card" target="_blank">
-                <div class="project-image-wrapper">
-                    <img src="images/autoclip.webp" alt="Autoclip" class="project-image" width="400" height="400" decoding="async" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-card-title">Autoclip</div>
-                        <p class="project-description">Automatically posts the top Twitch clips to YouTube</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/zacharygarwood/valorant-scraper" class="project-card" target="_blank">
-                <div class="project-image-wrapper">
-                    <img src="images/pairplot.webp" alt="Valorant Scraper" class="project-image" width="400" height="400" decoding="async" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-card-title">Valorant Scraper</div>
-                        <p class="project-description">Player statistics scraper</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/zacharygarwood/decoy" class="project-card" target="_blank">
-                <div class="project-image-wrapper">
-                    <img src="images/diagram.webp" alt="Decoy" class="project-image" width="400" height="400" decoding="async" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-card-title">Decoy</div>
-                        <p class="project-description">Password management system</p>
-                    </div>
-                </div>
-            </a>
+                </li>
+                <li class="release-row">
+                    <a href="https://github.com/zacharygarwood/autoclip" class="release-project" target="_blank" rel="noreferrer">
+                        <span class="release-image"><span class="dither-image"><img src="images/autoclip.webp" alt="Autoclip" width="400" height="400" decoding="async" loading="lazy"></span></span>
+                        <div class="release-copy">
+                            <div class="release-title"><h3>Autoclip</h3></div>
+                            <p>Automatically posts the top Twitch clips to YouTube</p>
+                        </div>
+                    </a>
+                    <div class="release-meta"><a href="https://github.com/zacharygarwood/autoclip" target="_blank" rel="noreferrer" aria-label="Autoclip github (opens in a new tab)">github <span aria-hidden="true">&#8599;</span></a></div>
+                </li>
+                <li class="release-row">
+                    <a href="https://github.com/zacharygarwood/valorant-scraper" class="release-project" target="_blank" rel="noreferrer">
+                        <span class="release-image"><span class="dither-image"><img src="images/pairplot.webp" alt="Valorant Scraper" width="400" height="400" decoding="async" loading="lazy"></span></span>
+                        <div class="release-copy">
+                            <div class="release-title"><h3>Valorant Scraper</h3></div>
+                            <p>Player statistics scraper</p>
+                        </div>
+                    </a>
+                    <div class="release-meta"><a href="https://github.com/zacharygarwood/valorant-scraper" target="_blank" rel="noreferrer" aria-label="Valorant Scraper github (opens in a new tab)">github <span aria-hidden="true">&#8599;</span></a></div>
+                </li>
+                <li class="release-row">
+                    <a href="https://github.com/zacharygarwood/decoy" class="release-project" target="_blank" rel="noreferrer">
+                        <span class="release-image"><span class="dither-image"><img src="images/diagram.webp" alt="Decoy" width="400" height="400" decoding="async" loading="lazy"></span></span>
+                        <div class="release-copy">
+                            <div class="release-title"><h3>Decoy</h3></div>
+                            <p>Password management system</p>
+                        </div>
+                    </a>
+                    <div class="release-meta"><a href="https://github.com/zacharygarwood/decoy" target="_blank" rel="noreferrer" aria-label="Decoy github (opens in a new tab)">github <span aria-hidden="true">&#8599;</span></a></div>
+                </li>
+            </ol>
+            <footer class="page-footer">
+                <span class="header-line">
+                    <a href="/">zachary garwood</a>
+                    <span class="kirby" id="kirby" role="button" tabindex="0" aria-label="Bomb Kirby">
+                        <img class="kirby-sprite" src="images/kirby.webp" alt="Bomb Kirby" width="20" height="20">
+                        <span class="kirby-boom" aria-hidden="true"></span>
+                    </span>
+                </span>
+                <nav aria-label="Footer navigation">
+                    <a class="active" href="/projects.html" aria-current="page">projects</a>
+                    <a href="/photos.html">photos</a>
+                    <a href="/movies.html">movies</a>
+                    <a href="/books.html">books</a>
+                </nav>
+            </footer>
         </div>
-    </div>
+    </main>
+    <script src="/gameboy.js"></script>
+    <script src="/kirby.js"></script>
+    <script src="/dither.js"></script>
     <script>
-        // touch devices: a tap toggles the overlay; the "open" line inside it follows the link
-        document.querySelectorAll('.project-card').forEach(function (card) {
-            card.querySelector('.project-overlay').insertAdjacentHTML('beforeend', '<span class="project-open">Open <span class="project-open-arrow">&rarr;</span></span>');
-            card.addEventListener('click', function (e) {
-                if (!window.matchMedia('(hover: none)').matches) return;
-                if (this.classList.contains('tapped') && e.target.closest('.project-open')) return;
-                e.preventDefault();
-                this.classList.toggle('tapped');
-            });
-        });
-
         // videos hold at their poster until the tile is near the viewport
         (function () {
             var vids = [].slice.call(document.querySelectorAll('video[data-src]'));

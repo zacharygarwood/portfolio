@@ -1,14 +1,21 @@
 // Bump CACHE_VERSION whenever you deploy changed files.
-const CACHE_VERSION = 'zg-v19';
+const CACHE_VERSION = 'zg-v20';
 const PRECACHE = [
     "/",
     "/index.html",
-    "/misc.html",
     "/projects.html",
     "/photos.html",
     "/movies.html",
     "/books.html",
     "/styles.css",
+    "/dither.js",
+    "/kirby.js",
+    "/gameboy.js",
+    "/fonts/Poppins-400.woff2",
+    "/fonts/Poppins-500.woff2",
+    "/fonts/Poppins-600.woff2",
+    "/fonts/Lora-Variable.woff2",
+    "/fonts/Lora-Italic-Variable.woff2",
     "/fonts/InterVariable.woff2",
     "/images/favicon.ico",
     "/images/kirby.webp"
@@ -174,8 +181,8 @@ self.addEventListener('fetch', function (event) {
         return;
     }
 
-    // CSS and fonts: serve instantly from cache, refresh in the background.
-    if (dest === 'style' || dest === 'font') {
+    // CSS, scripts and fonts: serve instantly from cache, refresh in the background.
+    if (dest === 'style' || dest === 'script' || dest === 'font') {
         event.respondWith(
             caches.match(req).then(function (hit) {
                 const net = fetch(req).then(function (res) {
