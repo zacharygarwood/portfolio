@@ -1,5 +1,5 @@
 // Bump CACHE_VERSION whenever you deploy changed files.
-const CACHE_VERSION = 'zg-v21';
+const CACHE_VERSION = 'zg-v22';
 const PRECACHE = [
     "/",
     "/index.html",
@@ -64,6 +64,7 @@ const WARM_COMMON = [
     "/images/movies/fantastic-mr-fox.webp",
     "/images/movies/kill-bill.webp",
     "/images/movies/mickey-17.webp",
+    "/images/movies/primetime.webp",
     "/images/movies/reservoir-dogs.webp",
     "/images/movies/resident-evil.webp",
     "/images/movies/scorsese.webp",
