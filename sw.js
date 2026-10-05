@@ -78,6 +78,7 @@ const WARM_COMMON = [
     "/images/games/it-takes-two.webp",
     "/images/games/kirby-air-ride.webp",
     "/images/games/kirby-and-the-amazing-mirror.webp",
+    "/images/games/league-of-legends.webp",
     "/images/games/left-4-dead-2.webp",
     "/images/games/mario-kart-ds.webp",
     "/images/games/mario-kart-wii.webp",
