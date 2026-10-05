@@ -82,6 +82,7 @@ const WARM_COMMON = [
     "/images/games/gta-v.webp",
     "/images/games/hades.webp",
     "/images/games/halo-3.webp",
+    "/images/games/halo-reach.webp",
     "/images/games/hollow-knight.webp",
     "/images/games/hyper-light-drifter.webp",
     "/images/games/inscryption.webp",
