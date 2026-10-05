@@ -60,6 +60,7 @@ const WARM_COMMON = [
     "/images/flounder.mp4",
     "/images/games/hollow-knight.webp",
     "/images/games/modern-warfare-2.webp",
+    "/images/games/paper-mario-the-thousand-year-door.webp",
     "/images/games/pokemon-platinum.webp",
     "/images/games/portal-2.webp",
     "/images/games/silksong.webp",
