@@ -183,6 +183,27 @@ main {
     color: #0A66C2;
 }
 
+/* and each section link gets a colour of its own */
+.summary a[href="/projects.html"]:hover {
+    color: #2563EB;
+}
+
+.summary a[href="/movies.html"]:hover {
+    color: #7C3AED;
+}
+
+.summary a[href="/books.html"]:hover {
+    color: #8B5A2B;
+}
+
+.summary a[href="/photos.html"]:hover {
+    color: #2E8B57;
+}
+
+.summary a[href="/games.html"]:hover {
+    color: #DC2626;
+}
+
 .domain {
     color: var(--text);
     letter-spacing: -0.01em;
