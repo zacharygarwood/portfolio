@@ -69,6 +69,7 @@ const WARM_COMMON = [
     "/images/games/dredge.webp",
     "/images/games/hades.webp",
     "/images/games/hollow-knight.webp",
+    "/images/games/inscryption.webp",
     "/images/games/it-takes-two.webp",
     "/images/games/kirby-air-ride.webp",
     "/images/games/kirby-and-the-amazing-mirror.webp",
