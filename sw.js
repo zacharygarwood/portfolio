@@ -65,6 +65,7 @@ const WARM_COMMON = [
     "/images/games/battlefield-3.webp",
     "/images/games/black-ops-2.webp",
     "/images/games/borderlands-2.webp",
+    "/images/games/broforce.webp",
     "/images/games/btd-battles.webp",
     "/images/games/celeste.webp",
     "/images/games/counter-strike.webp",
