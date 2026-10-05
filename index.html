@@ -165,7 +165,13 @@
             // warm the list so the first spin starts instantly
             lever.addEventListener('pointerenter', load, { once: true });
 
-            function refit() { fitTo(shown); }
+            // resizing to fit the prompt (on load, font swap, window resize) shouldn't animate
+            function refit() {
+                slot.style.transition = 'none';
+                fitTo(shown);
+                slot.offsetWidth;
+                slot.style.transition = '';
+            }
             refit();
             document.fonts.addEventListener('loadingdone', refit);
             window.addEventListener('resize', refit);
