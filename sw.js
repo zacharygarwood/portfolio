@@ -104,6 +104,7 @@ const WARM_COMMON = [
     "/images/games/thronefall.webp",
     "/images/games/tony-hawks-american-wasteland.webp",
     "/images/games/twilight-princess.webp",
+    "/images/games/wii-sports.webp",
     "/images/mafs-poster.webp",
     "/images/mafs.mp4",
     "/images/movt4.webp",
