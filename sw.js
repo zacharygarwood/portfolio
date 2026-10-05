@@ -70,6 +70,7 @@ const WARM_COMMON = [
     "/images/games/ocarina-of-time.webp",
     "/images/games/paper-mario-the-thousand-year-door.webp",
     "/images/games/pokemon-platinum.webp",
+    "/images/games/pokemon-soulsilver.webp",
     "/images/games/portal-2.webp",
     "/images/games/silksong.webp",
     "/images/games/slay-the-spire-2.webp",
