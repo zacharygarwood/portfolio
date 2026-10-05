@@ -65,6 +65,7 @@ const WARM_COMMON = [
     "/images/games/pokemon-platinum.webp",
     "/images/games/portal-2.webp",
     "/images/games/silksong.webp",
+    "/images/games/slay-the-spire-2.webp",
     "/images/mafs-poster.webp",
     "/images/mafs.mp4",
     "/images/movt4.webp",
