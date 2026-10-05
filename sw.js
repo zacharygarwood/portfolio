@@ -76,6 +76,7 @@ const WARM_COMMON = [
     "/images/games/divinity-original-sin-2.webp",
     "/images/games/dredge.webp",
     "/images/games/godzilla-destroy-all-monsters-melee.webp",
+    "/images/games/gta-v.webp",
     "/images/games/hades.webp",
     "/images/games/hollow-knight.webp",
     "/images/games/inscryption.webp",
