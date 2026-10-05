@@ -97,6 +97,7 @@ const WARM_COMMON = [
     "/images/games/portal-2.webp",
     "/images/games/pubg.webp",
     "/images/games/ravenswatch.webp",
+    "/images/games/realm-of-the-mad-god.webp",
     "/images/games/return-of-the-obra-dinn.webp",
     "/images/games/risk-of-rain-2.webp",
     "/images/games/rocket-league.webp",
