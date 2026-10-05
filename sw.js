@@ -75,6 +75,7 @@ const WARM_COMMON = [
     "/images/games/left-4-dead-2.webp",
     "/images/games/minecraft.webp",
     "/images/games/mini-motorways.webp",
+    "/images/games/minit.webp",
     "/images/games/modern-warfare-2.webp",
     "/images/games/modern-warfare-3.webp",
     "/images/games/ocarina-of-time.webp",
