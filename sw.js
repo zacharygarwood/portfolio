@@ -89,6 +89,7 @@ const WARM_COMMON = [
     "/images/games/super-mario-sunshine.webp",
     "/images/games/super-smash-bros-melee.webp",
     "/images/games/team-fortress-2.webp",
+    "/images/games/twilight-princess.webp",
     "/images/mafs-poster.webp",
     "/images/mafs.mp4",
     "/images/movt4.webp",
