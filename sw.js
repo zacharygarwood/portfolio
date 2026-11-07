@@ -1,5 +1,5 @@
 // Bump CACHE_VERSION whenever you deploy changed files.
-const CACHE_VERSION = 'zg-v31';
+const CACHE_VERSION = 'zg-v32';
 const PRECACHE = [
     "/",
     "/index.html",
