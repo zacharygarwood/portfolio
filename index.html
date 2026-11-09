@@ -57,10 +57,6 @@
                 <p>Currently a software engineer at <a href="https://dropbox.com/" target="_blank" rel="noreferrer">Dropbox</a>, working on the sync engine and desktop client.</p>
                 <p>Previously at <a href="https://freight.amazon.com/" target="_blank" rel="noreferrer">Amazon</a>, externalizing our middle-mile transportation network, and before that at <a href="https://www.principal.com/" target="_blank" rel="noreferrer">Principal</a> and <a href="https://www.iastate.edu/" target="_blank" rel="noreferrer">Iowa State University</a>.</p>
                 <p>I <a href="/projects.html">build things</a> for fun. When I'm not, you can find me playing <a href="/games.html">games</a>, watching <a href="/movies.html">movies</a>, reading <a href="/books.html">books</a>, or taking <a href="/photos.html">photos</a>.</p>
-                <div class="pick" id="pick">
-                    <a class="pick-slot"><span class="slot"><span class="slot-content"><span class="slot-cell"><span class="pick-prompt">need a recommendation?</span></span></span></span></a>
-                    <button type="button" class="slot-lever" title="spin for a movie, book, or game" aria-label="spin for a movie, book, or game">&#10227;</button>
-                </div>
             </div>
             <div class="footer">
                 <a href="/" class="domain">zacharygarwood.com</a>
@@ -70,113 +66,6 @@
         </div>
     </main>
     <script src="/gameboy.js"></script>
-    <script>
-        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-
-        // the lever spins a reel of everything on the movies, books and games pages and
-        // lands on something rated 7/10 or better; read live so new ratings join in
-        (function () {
-            var pick = document.getElementById('pick');
-            var link = pick.querySelector('.pick-slot');
-            var slot = pick.querySelector('.slot');
-            var content = pick.querySelector('.slot-content');
-            var lever = pick.querySelector('.slot-lever');
-            var shown = content.firstElementChild;
-            var landed = null;
-            var entries = null;
-
-            var measure = document.createElement('span');
-            measure.className = 'slot-measure';
-            measure.setAttribute('aria-hidden', 'true');
-            pick.appendChild(measure);
-
-            function load() {
-                if (entries) return entries;
-                entries = Promise.all([['movies', 'watch'], ['books', 'read'], ['games', 'play']].map(function (src) {
-                    var page = '/' + src[0] + '.html';
-                    return fetch(page).then(function (res) { return res.text(); }).then(function (html) {
-                        var doc = new DOMParser().parseFromString(html, 'text/html');
-                        return [].map.call(doc.querySelectorAll('.cover'), function (c) {
-                            return {
-                                verb: src[1],
-                                page: page,
-                                title: c.querySelector('.cover-title').textContent,
-                                score: c.querySelector('.cover-score').textContent
-                            };
-                        });
-                    });
-                })).then(function (lists) { return [].concat.apply([], lists); });
-                entries.catch(function () { entries = null; });
-                return entries;
-            }
-
-            function cell(e) {
-                var c = document.createElement('span');
-                c.className = 'slot-cell';
-                [['pick-verb', e.verb], ['pick-title', e.title], ['pick-score', e.score]].forEach(function (part) {
-                    var span = document.createElement('span');
-                    span.className = part[0];
-                    span.textContent = part[1];
-                    c.appendChild(span);
-                });
-                return c;
-            }
-
-            function fitTo(c) {
-                measure.replaceChildren(c.cloneNode(true));
-                slot.style.width = measure.firstChild.getBoundingClientRect().width + 'px';
-            }
-
-            function spin() {
-                if (lever.disabled) return;
-                lever.disabled = true;
-                load().then(function (list) {
-                    var good = list.filter(function (e) { return parseFloat(e.score) >= 7 && e !== landed; });
-                    var target = good[Math.floor(Math.random() * good.length)];
-                    var final = cell(target);
-                    fitTo(final);
-
-                    function land() {
-                        content.replaceChildren(final);
-                        shown = final;
-                        landed = target;
-                        link.href = target.page;
-                        lever.disabled = false;
-                    }
-                    if (reduceMotion.matches) { land(); return; }
-
-                    var reel = document.createElement('span');
-                    reel.className = 'slot-reel';
-                    reel.appendChild(shown);
-                    for (var n = 0; n < 12; n++) reel.appendChild(cell(list[Math.floor(Math.random() * list.length)]));
-                    reel.appendChild(final.cloneNode(true));
-                    reel.style.setProperty('--slot-count', reel.children.length - 1);
-                    reel.style.setProperty('--slot-dur', '1.4s');
-                    content.replaceChildren(reel);
-                    reel.addEventListener('animationend', land, { once: true });
-                }, function () { lever.disabled = false; });
-            }
-
-            lever.addEventListener('click', spin);
-            // before the first spin the prompt itself pulls the lever
-            link.addEventListener('click', function (e) {
-                if (!link.hasAttribute('href')) { e.preventDefault(); spin(); }
-            });
-            // warm the list so the first spin starts instantly
-            lever.addEventListener('pointerenter', load, { once: true });
-
-            // resizing to fit the prompt (on load, font swap, window resize) shouldn't animate
-            function refit() {
-                slot.style.transition = 'none';
-                fitTo(shown);
-                slot.offsetWidth;
-                slot.style.transition = '';
-            }
-            refit();
-            document.fonts.addEventListener('loadingdone', refit);
-            window.addEventListener('resize', refit);
-        })();
-    </script>
 </body>
 </html>
 
