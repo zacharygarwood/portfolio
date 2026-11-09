@@ -1,17 +1,8 @@
-// Bump CACHE_VERSION whenever you deploy changed files.
-const CACHE_VERSION = 'zg-v37';
+// Caches only images, video and fonts. Pages, CSS and JS always come from the
+// network so changes show up on the next load. Bump CACHE_VERSION only if you
+// replace an image/font in place under the same filename.
+const CACHE_VERSION = 'zg-media-v1';
 const PRECACHE = [
-    "/",
-    "/index.html",
-    "/projects.html",
-    "/photos.html",
-    "/movies.html",
-    "/books.html",
-    "/games.html",
-    "/styles.css",
-    "/dither.js",
-    "/kirby.js",
-    "/gameboy.js",
     "/fonts/Poppins-400.woff2",
     "/fonts/Poppins-500.woff2",
     "/fonts/Poppins-600.woff2",
@@ -22,7 +13,7 @@ const PRECACHE = [
     "/images/kirby.webp"
 ];
 
-// Install: grab just the pages, css and font up front - small and fast.
+// Install: grab the fonts up front - small and fast.
 // Everything else is cached the first time it is actually viewed.
 self.addEventListener('install', function (event) {
     event.waitUntil(
@@ -243,38 +234,10 @@ self.addEventListener('fetch', function (event) {
 
     const dest = req.destination;
 
-    // HTML: serve the cached page immediately, then refresh it in the background,
-    // so clicking between pages never waits on the network.
-    if (req.mode === 'navigate' || dest === 'document') {
-        event.respondWith(
-            caches.match(req).then(function (hit) {
-                const net = fetch(req).then(function (res) {
-                    const copy = res.clone();
-                    caches.open(CACHE_VERSION).then(function (c) { c.put(req, copy); });
-                    return res;
-                }).catch(function () { return hit; });
-                return hit || net;
-            })
-        );
-        return;
-    }
+    // Pages, CSS and JS: leave to the network so edits are never stale.
+    if (req.mode === 'navigate' || dest === 'document' || dest === 'style' || dest === 'script') return;
 
-    // CSS, scripts and fonts: serve instantly from cache, refresh in the background.
-    if (dest === 'style' || dest === 'script' || dest === 'font') {
-        event.respondWith(
-            caches.match(req).then(function (hit) {
-                const net = fetch(req).then(function (res) {
-                    const copy = res.clone();
-                    caches.open(CACHE_VERSION).then(function (c) { c.put(req, copy); });
-                    return res;
-                }).catch(function () { return hit; });
-                return hit || net;
-            })
-        );
-        return;
-    }
-
-    // Images and video: cache first - these never change in place.
+    // Images, video and fonts: cache first - these never change in place.
     event.respondWith(
         caches.match(req).then(function (hit) {
             return hit || fetch(req).then(function (res) {
